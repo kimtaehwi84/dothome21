@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //변수 : 데이터 저장소
+        // 100, 200, 300 출력
+
+        {
+            let x = 100;
+            let y = 200;
+            let z = 300;
+
+            document.write("변수이용 100 200 300<br>");
+            document.write(x);
+            document.write(y);
+            document.write(z);
+            document.write("<br><br><br>");
+        }
+
+        //배열 
+        // 100, 200, 300 출력
+        {
+            const arr = new Array();
+            arr[0] = 100;
+            arr[1] = 200;
+            arr[2] = 300;
+
+            document.write("배열이용 100 200 300<br>");
+            document.write(arr[0]);
+            document.write(arr[1]);
+            document.write(arr[2]);
+            document.write("<br><br><br>");
+        }
+
+        //객체
+        //
+        {
+            const obj = new Object();
+            obj[0] = 100;
+            obj[1] = 200;
+            obj[2] = 300;
+
+            document.write("객체이용 100 200 300<br>");
+            document.write(obj[0]);
+            document.write(obj[1]);
+            document.write(obj[2]);
+            document.write("<br><br><br>");
+        }
+
+        //반복문
+        //for문을 이용해서 1-50까지
+        {
+            document.write("for문을 이용해서 1-50까지<br>");
+            for (let i = 1; i <= 50; i++) {
+                document.write(i, " ");
+            }
+            document.write("");
+            document.write("<br><br><br>");
+        }
+
+        //반복문
+        //for문을 이용해서 50-1
+        {
+            document.write("for문을 이용해서 50-1<br>");
+            for (let i = 50; i >= 1; i--) {
+                document.write(i);
+            }
+            document.write("<br><br><br>");
+        }
+
+        //반복문
+        //for문을 이용해서 1-50 짝수만
+        document.write("for문을 이용해서 1-50 짝수만<br>"); {
+            for (let i = 2; i <= 50; i += 2) {
+                if (i % 2 == 0) {
+                    document.write(i);
+                }
+            }
+            document.write("<br><br><br>");
+        }
+
+        //반복문
+        //for문을 이용해서 1-50 홀수만
+        {
+            document.write("for문을 이용해서 1-50 홀수만<br>");
+            for (let i = 1; i < 50; i += 2) {
+                if (i % 2 == 1) {
+                    document.write(i);
+                }
+            }
+            document.write("<br><br><br>");
+        }
+
+        //8단
+        {
+            document.write("8단<br>");
+            for (var i = 8; i <= 8; i++) {
+                for (var j = 1; j <= 8; j++) {
+                    var sum = i * j;
+                    document.write(i + "*" + j + "=" + sum, "<br>");
+                }
+            }
+            document.write("<br><br><br>");
+        }
+
+        // 5단 부터 8단
+        {
+            document.write("5단 부터 8단<br>");
+            for (let i =5; i <=8; i++) {
+                for (let j=1; j <=8; j++) {
+                    let sum = i * j;
+                    document.write(i+"*"+j+"="+sum, "<br>");
+                }
+            }
+            document.write("<br><br><br>");
+        }
+    </script>
+</body>
+
+</html>
