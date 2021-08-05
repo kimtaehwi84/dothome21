@@ -304,10 +304,8 @@
             <pre class="line-numbers"><code class="language-js">{
     //true, false, 1, "1", 0, null, undefined, [], {}, ""
     if ( true ) {
-        document.write("*** 01. if문 ***");
         document.write("조건문이 실행되었습니다.(true)");
     } else {
-        document.write("*** 01. if문 ***");
         document.write("조건문이 실행되었습니다.(false)");
     }
 }
@@ -325,19 +323,14 @@
     let num = 100;
     
     if (num == 90) {
-        document.write("*** 02. 다중 if문 ***");
         document.write("조건문이 실행되었습니다.(num == 90)");
     } else if (num == 100) {
-        document.write("*** 02. 다중 if문 ***");
         document.write("조건문이 실행되었습니다.(num == 100)");
     } else if (num == 200) {
-        document.write("*** 02. 다중 if문 ***");
         document.write("조건문이 실행되었습니다.(num == 200)");
     } else if (num == 300) {
-        document.write("*** 02. 다중 if문 ***");
         document.write("조건문이 실행되었습니다.(num == 300)");
     } else {
-        document.write("*** 02. 다중 if문 ***");
         document.write("조건문이 실행되었습니다.(num == XX)");
     }
 }
@@ -355,7 +348,6 @@
     let num = 100;
     
     if (num == 100) {
-        document.write("*** 03. 중첩 if문 ***");
         document.write("조건문이 실행되었습니다.(1)");
         if(num==100) {
             document.write("조건문이 실행되었습니다.(2)");
@@ -364,7 +356,6 @@
             }
         }
     } else {
-        document.write("*** 03. 중첩 if문 ***");
         document.write("조건문이 실행되었습니다.(4)");
     }
 }
@@ -383,19 +374,15 @@ let num = 100;
                 
 switch (num) {
     case 100:
-        document.write("*** 04. switch문 ***");
         document.write("조건문이 실행되었습니다.(num == 100)");
     break;
     case 200:
-        document.write("*** 04. switch문 ***");
         document.write("조건문이 실행되었습니다.(num == 200)");
     break;
     case 300:
-        document.write("*** 04. switch문 ***");
         document.write("조건문이 실행되었습니다.(num == 300)");
     break;
     default:
-        document.write("*** 04. switch문 ***");
         document.write("조건문이 실행되었습니다.(num == XX)");
     break;
 }
@@ -417,9 +404,7 @@ switch (num) {
     // } else {
     //     document.write("false");
     // }
-    
-    document.write("*** 05. 삼항 연산자(조건부 연산자) ***");
-    
+        
     (num == 100) ? document.write("true"): document.write("false");
 }
 </code></pre>
@@ -435,8 +420,6 @@ switch (num) {
             <pre class="line-numbers"><code class="language-js">{
     let num = 100;
     
-    document.write("*** 06. if문 생략 ***");
-    
     if (num == 100) document.write("true");
     else document.write("false");
 }
@@ -451,8 +434,6 @@ switch (num) {
         <h2>07. while문<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    document.write("*** 07. while문 ***");
-    
     let num = 1;
     while (num &lt;= 10) {
         document.write(num + ". 반복문이 실행되었습니다.");
@@ -470,8 +451,6 @@ switch (num) {
         <h2>08. do while문<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    document.write("*** 08. do while문 ***");
-
     let num = 1;
     do {
         document.write(num + ". 반복문이 실행되었습니다.");
@@ -489,8 +468,6 @@ switch (num) {
         <h2>09. for문<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    document.write("*** 09. for문 ***<br>");
-    
     // for(초깃값; 조건식; 증감값){
     //     //실행문
     // }
@@ -510,8 +487,6 @@ switch (num) {
         <h2>10. 중첩 for문<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    document.write("*** 10. 중첩 for문 ***<br>");
-    
     for (var i = 1; i &lt;= 5; i++) {
         document.write(i + ". 반복문(아이)이 실행되었습니다.");
         for(var j = 1; j &lt;= 5; j++) {
@@ -530,8 +505,6 @@ switch (num) {
         <h2>11. forEach()<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    document.write("*** 11. forEach() ***");
-
     const num = [100, 200, 300, 400, 500];
 
     // document.write(num[0]);
@@ -568,8 +541,6 @@ switch (num) {
         <h2>12. for of문<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    document.write("*** 12. for of문 ***");
-
     const num = [100, 200, 300, 400, 500];
 
     for (let i of num) {
@@ -587,9 +558,7 @@ switch (num) {
         <h2>13. for in문<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    document.write("*** 13. for in문 ***);
-
-    const num = [100, 200, 300, 400, 500];
+   const num = [100, 200, 300, 400, 500];
 
     for (let i in num) {
         document.write(num[i]);
@@ -620,8 +589,6 @@ switch (num) {
         <h2>14. break문<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    document.write("*** 14. break문 ***");
-
     //while문을 이용해서 1부터 20까지 출력
     let i = 0;
     while (i &lt; 20) {
@@ -651,8 +618,6 @@ switch (num) {
         <h2>15. continue문<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    document.write("*** 15. continue문 ***");
-
     let num = 0;
     while (true) {
         num++;
