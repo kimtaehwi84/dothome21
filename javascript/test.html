@@ -204,6 +204,65 @@
             };
             document.write("<br><br>");
         }
+
+
+        //test
+
+        {
+            const arr = [100, 200, 300, 400, 500];
+
+            //for문을 이용해서 각 데이터를 출력하시오!!
+
+            document.write("*** //for문을 이용해서 각 데이터를 출력하시오!! ***");
+            document.write("<br>");
+
+            for (let i = 0; i < arr.length; i++) {
+                document.write(arr[i]);
+            }
+            document.write("<br><br>");
+
+        }
+
+
+        //"함수가 실행되었습니다" (선언적 함수);
+
+        {
+            function func() {
+                document.write("*** 함수가 실행되었습니다 (선언적 함수); >>>>>>>");
+                document.write("함수가 실행되었습니다.");
+                document.write("<br><br>");
+            }
+            func();
+        }
+
+        //"함수가 실행되었습니다" (익명 함수);
+        {
+            const func = function () {
+                document.write("*** 함수가 실행되었습니다 (익명 함수); >>>>>>");
+                document.write("함수가 실행되었습니다.");
+                document.write("<br><br>");
+            }
+            func();
+        }
+        //"함수가 실행되었습니다" (매개변수 함수);
+        {
+            function func(str) {
+                document.write("*** 함수가 실행되었습니다 (매개변수 함수); >>>>>>");
+                document.write(str);
+            }
+            func("함수가 실행되었습니다.");
+            document.write("<br><br>");
+        }
+        //"함수가 실행되었습니다" (리턴값 함수);
+        {
+            function func() {
+                const str = "함수가 실행되었습니다.";
+                return str;
+            }
+            document.write("*** 함수가 실행되었습니다 (리턴값 함수); >>>>>>>");
+            document.write(func());
+            document.write("<br><br>");
+        }
     </script>
 </body>
 
