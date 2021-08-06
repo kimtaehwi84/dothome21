@@ -1,161 +1,118 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>레이아웃 테스트 05</title>
+    <title>레이아웃 테스트5</title>
     <style>
         * {
-            margin: 0;
             padding: 0;
+            margin: 0;
+            background-color: #b3e5fc  ;
         }
-        body {
-            width: 100%;
-            background-color: #e1f5fe;
-        }
+
         #wrap {
-            width: 1200px;
+            width: 90%;
             margin: 0 auto;
         }
+
         header {
-            width: 100%;
-            height: 150px;
-            margin: 0 auto;
-            background-color: #b3e5fc;
-        }
-        aside {
-            width: 100%;
-            height: 150px;
-            margin: 0 auto;
             background-color: #81d4fa;
-        }
-        main {
-            width: 100%;
-            height: 1200px;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-        footer {
             width: 100%;
             height: 150px;
-            margin: 0 auto;
-            background-color: #01579b;
-
         }
-        main .article1 {
-            width: 30%;
-            height: 1200px;
-            margin: 0 auto;
+
+        nav {
             background-color: #4fc3f7;
-            float: left;
+            width: 100%;
+            height: 150px;
         }
-        main .article2 {
-            width: 70%;
-            height: 400px;
-            margin: 0 auto;
+
+        main {
+            overflow: auto;
+        }
+
+        aside {
             background-color: #29b6f6;
+            width: 30%;
+            height: 900px;
             float: left;
-
         }
-        main .article3 {
-            width: 70%;
-            height: 400px;
-            margin: 0 auto;
+
+        section {
             background-color: #03a9f4;
-            float: left;
-        }
-        main .article4 {
             width: 70%;
-            height: 400px;
-            margin: 0 auto;
-            background-color: #039be5;
+            height: 300px;
             float: left;
-        }  
+        }
 
-        @media (max-width:1220px) {
-            #wrap{
+        article {
+            background-color: #039be5;
+            width: 70%;
+            height: 300px;
+            float: left;
+        }
+
+        span {
+            background-color: #0288d1;
+            width: 70%;
+            height: 300px;
+            float: left;
+        }
+
+        footer {
+            background-color: #01579b;
+            width: 100%;
+            height: 150px;
+        }
+
+        @media (max-width: 1000px) {
+            #wrap {
                 width: 100%;
             }
-            header{
-                width: 100%;
-            }
+
             aside {
-                width: 100%;
+                height: 600px;
             }
-            main {
-                width: 100%;
-                height: 1200px;
-            }
-            footer {
-                width: 100%;
-            }
-            main .article1 {
-                width: 30%;
-                height: 800px;
-            }
-            main .article2 {
-                width: 70%;
-                height: 400px;
 
-            }
-            main .article3 {
-                width: 70%;
-                height: 400px;
-
-            }
-            main .article4 {
+            span {
                 width: 100%;
-                height: 400px;
             }
         }
 
-        @media (max-width:600px) {
-            #wrap{
-                width: 100%;
-            }
-            header{
-                width: 100%;
-            }
+        @media (max-width: 600px) {
             aside {
+                float: none;
                 width: 100%;
+                height: 150px;
             }
-            main {
+
+            section {
+                float: none;
                 width: 100%;
-                height: 1500px;
+                height: 300px;
             }
-            footer {
+
+            article {
+                float: none;
                 width: 100%;
-            }
-            main .article1 {
-                width: 100%;
-                height: 200px;
-            }
-            main .article2 {
-               width: 100%;
-               height: 500px;
-            }
-            main .article3 {
-                width: 100%;
-                height: 400px;
-            }
-            main .article4 {
-                width: 100%;
-                height: 400px;
+                height: 150px;
             }
         }
     </style>
-    
 </head>
+
 <body>
     <div id="wrap">
         <header></header>
-        <aside></aside>
+        <nav></nav>
         <main>
-            <article class="article1"></article>
-            <article class="article2"></article>
-            <article class="article3"></article>
-            <article class="article4"></article>
+            <aside></aside>
+            <section></section>
+            <article></article>
+            <span></span>
         </main>
         <footer></footer>
     </div>
