@@ -289,6 +289,14 @@
         <li><a href=#sample16>16. 객체 : 데이터 저장(키와 값) : 표현 방법8 : 객체 속에 함수</a></li>
     </ul>
 
+
+    <h2 class="mt20">추가</h2>
+    <ul>
+        <li><a href=#sample17>01. 변수의 종류 : 전역변수, 지역변수</a></li>
+        <li><a href=#sample18>02. 변수의 변환 : 형 변환</a></li>
+        <li><a href=#sample19>03. 변수의 유형 : 데이터 타입</a></li>
+    </ul>
+
     <hr>
 
     <!-- sample1 -->
@@ -637,6 +645,79 @@
     <hr>
     <!-- //sample16 -->
 
+    <!-- sample17 -->
+    <div id="sample17" class="sample">
+        <h2>17. 변수의 종류 : 변수(전역/지역), 매개변수<span class="dot"></span></h2>
+        <div class="code">
+            <pre class="line-numbers"><code class="language-js">{
+
+    </code></pre>
+        </div>
+    </div>
+    <hr>
+    <!-- //sample17 -->
+
+    <!-- sample18 -->
+    <div id="sample18" class="sample">
+        <h2>18. <span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    let x = 100;
+    let y = "100";
+
+    document.write("x: " + x + " : " + typeof (x));
+    document.write("y: " + y + " : " + typeof (y));
+
+    x = "" + x; //숫자를 문자로 형 변환
+    document.write("x: " + x + " : " + typeof (x));
+
+    y = Number(y); //내장 객체를 이용한 형 변환 (number 메서드를 이용)
+    document.write("y: " + y + " : " + typeof (y));
+
+    x = Number(x); //숫자로 바꾸기
+    document.write("x: " + x + " : " + typeof (x));
+
+    y = String(y); //문자로 바꾸기
+    document.write("y: " + y + " : " + typeof (y));
+}    
+        </code></pre>
+        </div>
+    </div>
+    <hr>
+    <!-- //sample18 -->
+
+    <!-- sample19 -->
+    <div id="sample19" class="sample">
+        <h2>19. <span class="dot"></span></h2>
+        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    let num = 100;
+    let str = "javascript"
+    let func = function () {};
+    let arr = [];
+    let obj = {};
+    let boo = true;
+    let nul; // 아무런 값이 없을 때
+    let und = undefined; // 값이 정의 되어 있지 않을 때
+    let sym = Symbol();
+
+
+    document.write(typeof (num));
+    document.write(typeof (str));
+    document.write(typeof (func));
+    document.write(typeof (arr));
+    document.write(typeof (obj));
+    document.write(typeof (boo));
+    document.write(typeof (nul));
+    document.write(typeof (und));
+    document.write(typeof (sym));
+}
+    </code></pre>
+        </div>
+    </div>
+    <hr>
+    <!-- //sample19 -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/prism.min.js"></script>
     <script>
@@ -887,6 +968,132 @@
             obj.d();
             obj.e();
             obj.f();
+            document.write(obj.c, "<br><br>");
+        }
+
+        //sample17
+        //17. 변수의 종류 : 변수(전역/지역), 매개변수
+        {
+            document.write("*** 17. 변수의 종류 : 변수(전역/지역), 매개변수 ***<br>");
+
+            let x = 100; //변수 설정 : 전역 변수
+            let y = 200;
+            let z = "java1";
+            let a = 300;
+
+            function func() { //변수 설정 : 지역 변수 (함수안에 지정)
+                let x = 100;
+                let y = 200;
+                let z = "java2";
+                a = 400; // 전역 변수 : 변수 값이 300-> 400으로 변경
+                y = 500; // 지역 변수 : 변수 값이 200-> 500으로 변경
+
+                document.write("함수 안", "<br>");
+                document.write(x, "<br>");
+                document.write(y, "<br>");
+                document.write(z, "<br>");
+                document.write(a, "<br><br>");
+
+            }
+
+            func();
+            document.write("함수 밖", "<br>");
+            document.write(x, "<br>");
+            document.write(y, "<br>");
+            document.write(z, "<br><br>");
+
+
+            const func1 = function () {
+                let x = 100;
+                let y = 200;
+                let z = "java3";
+
+                document.write(x, "<br>");
+                document.write(y, "<br>");
+                document.write(z, "<br><br>");
+
+            }
+            func1();
+
+            //매개변수 함수 안에 넣고 실행하세요!!
+            const func2 = function (x, y, z) {
+
+                document.write(x, "<br>");
+                document.write(y, "<br>");
+                document.write(z, "<br><br>");
+
+            }
+            func2(100, 200, "java4");
+
+            //리턴값 함수 안에 넣고 실행하세요!!
+            // function func3 () {
+            //    const str = [100, 200, "java5"];
+            //    return str;
+            //}
+            //document.write(func3(x, y, z));
+
+            const func3 = function () {
+                let x = "100";
+                let y = "200";
+                let z = "java5";
+
+                return x + y + z;
+            }
+            document.write(func3());
+        }
+
+        //sample18
+        //18. 변수의 변환 : 형 변환
+        {
+            document.write("<br><br>*** 18. 변수의 변환 ***<br>");
+            let x = 100;
+            let y = "100";
+
+            document.write("x: " + x + " : " + typeof (x), "<br>");
+            document.write("y: " + y + " : " + typeof (y), "<br><br>");
+
+            x = "" + x; //숫자를 문자로 형 변환
+            document.write("x: " + x + " : " + typeof (x), "<br>");
+
+            y = Number(y); //내장 객체를 이용한 형 변환 (number 메서드를 이용)
+            document.write("y: " + y + " : " + typeof (y), "<br><br>");
+
+            x = Number(x); //숫자로 바꾸기
+            document.write("x: " + x + " : " + typeof (x), "<br>");
+
+            y = String(y); //문자로 바꾸기
+            document.write("y: " + y + " : " + typeof (y), "<br><br>");
+
+        }
+
+        //sample19
+        //19. 변수의 유형(데이터 타입)
+        // 변수 :숫자(number), 문자(string), 함수(function), 배열(object)
+        // 객체(object), 블린(boolen), 특수값(null, undefined), 심볼(symbol)
+        {
+            document.write("<br>*** 19. 변수의 유형(데이타 타입) ***<br>");
+
+            let num = 100;
+            let str = "javascript"
+            let func = function () {};
+            let arr = [];
+            let obj = {};
+            let boo = true;
+            let nul; // 아무런 값이 없을 때
+            let und = undefined; // 값이 정의 되어 있지 않을 때
+            let sym = Symbol();
+
+
+            document.write(typeof (num), "<br>");
+            document.write(typeof (str), "<br>");
+            document.write(typeof (func), "<br>");
+            document.write(typeof (arr), "<br>");
+            document.write(typeof (obj), "<br>");
+            document.write(typeof (boo), "<br>");
+            document.write(typeof (nul), "<br>");
+            document.write(typeof (und), "<br>");
+            document.write(typeof (sym), "<br>");
+
         }
     </script>
 </body>

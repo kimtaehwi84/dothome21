@@ -301,7 +301,6 @@
             <pre class="line-numbers"><code class="language-js">{
     function func() {
         //실행문
-        document.write("*** 01. 선언적 함수 ***");
         document.write("함수가 실행되었습니다.");
     }
     func();
@@ -318,7 +317,6 @@
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
     const func = function(){
-        document.write("*** 02. 익명 함수 ***");
         document.write("함수가 실행되었습니다.");
     }
     func();
@@ -335,10 +333,14 @@
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
     function func(str) {
-        document.write("*** 03. 매개변수 함수 ***");
         document.write(str);
     }
     func("함수가 실행되었습니다.");
+
+    function func1(str1, str2) {
+        document.write(str1, str2);
+    }
+    func1("함수가",  "실행되었습니다.");
 }
 </code></pre>
         </div>
@@ -355,7 +357,6 @@
         const str = "함수가 실행되었습니다.";
         return str;
     }
-    document.write("*** 04. 리턴값 함수 ***");
     document.write(func());
 }
 </code></pre>
@@ -377,7 +378,6 @@
     // func();
 
     func = () => {
-        document.write("*** 05. 화살표 함수 : 선언적 함수 ***");
         document.write("함수가 실행되었습니다.");
     }
     func();
@@ -394,13 +394,11 @@
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
     // const func = function () {
-    //     document.write("*** 06. 화살표 함수 : 익명 함수 ***");
     //     document.write("함수가 실행되었습니다.");
     // }
     // func();
 
     const func = () => {
-        document.write("*** 06. 화살표 함수 : 익명 함수 ***");
         document.write("함수가 실행되었습니다.");
     }
     func();
@@ -424,7 +422,6 @@
     }
     func();
 
-    document.write("*** 07. 화살표 함수 : 리턴값 함수 ***");
     document.write(func());
 }
 </code></pre>
@@ -441,8 +438,6 @@
     const func = (str) => {
         return str;
     }
-    document.write("*** 08. 화살표 함수 : 익명 함수 + 매개변수 + 리턴값 ***");
-
     document.write(func("함수가 실행되었습니다."));
 }
 </code></pre>
@@ -456,12 +451,9 @@
         <h2>09. 화살표 함수 : 익명 함수 + 매개변수 + 리턴값 + 괄호 생략<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    document.write("*** 09. 화살표 함수 : 익명 함수 + 매개변수 + 리턴값 + 괄호 생략 ***");
-
     const func = (str) => {
         return str;
     }
-
     document.write(func("함수가 실행되었습니다."));
 }
 </code></pre>
@@ -475,8 +467,6 @@
         <h2>10. 화살표 함수 : 익명 함수 + 매개변수 + 리턴값 + 괄호 생략 + 리턴 생략<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    document.write("*** 10. 화살표 함수 : 익명 함수 + 매개변수 + 리턴값 + 괄호 생략 + 리턴 생략 ***");
-
     const func = str => str;
 
     document.write(func("함수가 실행되었습니다."));
@@ -492,8 +482,6 @@
         <h2>11. 화살표 함수 : 선언적 함수 + 매개변수 + 리턴값 + 괄호 생략 + 리턴 생략<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    document.write("*** 11. 화살표 함수 : 선언적 함수 + 매개변수 + 리턴값 + 괄호 생략 + 리턴 생략 ***");
-
     func = str => str;
 
     document.write(func("함수가 실행되었습니다."));
@@ -509,8 +497,6 @@
         <h2>12. 내부 함수<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    document.write("*** 12. 내부 함수 ***");
-
     function func() {
         function funA() {
             document.write("함수A가 실행되었습니다.");
@@ -535,8 +521,6 @@
         <h2>13. 즉시실행 함수<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    document.write("*** 13. 즉시실행 함수 ***");
-
     (function () {
         document.write("함수가 실행되었습니다.");
     })();
@@ -552,8 +536,6 @@
         <h2>14. 파라미터 함수<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    document.write("*** 14. 파라미터 함수 ***");
-
     function func(str = "함수가 실행되었습니다.") {
         document.write(str);
     }
@@ -570,8 +552,6 @@
         <h2>15. 아규먼트 함수<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    document.write("*** 15. 아규먼트 함수 ***");
-
     function func(strA, strB) {
         // document.write(strA);
         // document.write(strB);
@@ -591,8 +571,6 @@
         <h2>16. 재귀 함수<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    document.write("*** 16. 재귀 함수 ***");
-
     function func(num) {
         if (num &lt;= 1) {
             document.write("함수가 실행되었습니다.");
@@ -614,8 +592,6 @@
         <h2>17. 콜백 함수<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    document.write("*** 17. 콜백 함수 ***");
-
     function funA() {
         document.write("함수A가 실행되었습니다.");
     }
@@ -637,8 +613,6 @@
         <h2>18. 콜백 함수 : 반복문<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    document.write("*** 18. 콜백 함수 : 반복문 ***");
-
     function func() {
         document.write("함수가 실행되었습니다.");
     }
@@ -661,8 +635,6 @@
         <h2>19. 콜백 함수 : 동기/비동기<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    document.write("*** 19. 콜백 함수 : 동기/비동기 ***");
-
     function funA() {
         console.log("funA가 실행되었습니다.");
     }
@@ -743,7 +715,12 @@
                 document.write("*** 03. 매개변수 함수 ***<br>");
                 document.write(str);
             }
-            func("함수가 실행되었습니다.<br><br>");
+            func("함수가 실행되었습니다.<br>");
+
+            function func1(str1, str2) {
+                document.write(str1, str2);
+            }
+            func1("함수가",  "실행되었습니다.<br><br>");
         }
 
         //sample04
