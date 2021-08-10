@@ -1,0 +1,9 @@
+/* common 공통요소 */
+
+/* container */
+.container {
+    max-width: 1200px;
+    widows: 100%;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.13);
+}
