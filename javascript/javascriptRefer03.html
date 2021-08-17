@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -1091,7 +1090,7 @@ funE(funF);
         //비동기 : 동시에 일어나지 않는 것
         {
             document.write("*** 19. 콜백 함수 : 동기/비동기 ***<br>");
-            document.write("콘솔 출력<br>");
+            document.write("콘솔 확인<br>");
 
             function funA() {
                 console.log("funA가 실행되었습니다.<br>");
@@ -1137,6 +1136,44 @@ funE(funF);
             funE(funF);
 
             document.write("<br>");
+        }
+
+        //sample21. 함수 유형 : 함수와 매개변수를 이용한 형태
+
+
+        //test
+        //선언
+        {
+            function func() {
+                document.write("함수가 실행되었습니다.");
+            }
+            func();
+        }
+
+        //익명
+        {
+            const func = function () {
+                document.write("함수가 실행되었습니다.");
+            }
+            func();
+        }
+
+        //매개
+        {
+            function func(str) {
+                document.write(str);
+            }
+            func("함수가 실행되었습니다.");
+        }
+
+        //리턴
+
+        {
+            function func() {
+                const str = "함수가 실행되었습니다.";
+                return str;
+            }
+            document.write(func());
         }
     </script>
 </body>
