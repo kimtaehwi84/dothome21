@@ -67,7 +67,9 @@
 
 
 /* cardType02 */
-#cardType {}
+#cardType {
+
+}
 
 .cardType02 {
     font-family: 'NEXON Lv1 Gothic OTF';
@@ -98,7 +100,6 @@
 .card2 .card-img2 {
     width: 280px;
 }
-
 .card2 .but {
     width: 70px;
     padding: 3px;
@@ -112,24 +113,17 @@
 .card-wrap2 {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-}
 
+}
 .card2 .card-title2 {
     display: block;
     font-size: 25px;
-    white-space: nowrap;  
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 .card2 .card-desc2 {
     display: block;
     font-size: 16px;
     font-weight: 300;
     overflow: hidden; 
-    display: -webkit-box; 
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
 }
 .card2 .card-keyword2 {
     font-size: 13px;
