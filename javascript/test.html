@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        f5 = (str) => {
+            document.write(str);
+
+        }
+        f5("화살표");
+
+        f6 = (str) => {
+            return str;
+        }
+        document.write(f6("화살표"));
+
+        f7 = (str) => str;
+        document.write(f7("화살표<br>"));
+
+        function f8(str1, str2){
+            document.write(str1+srt2);
+        }
+
+        // 함수가 실행되었습니다.
+
+        function f10(str1, str2){
+            document.write(str1+str2);
+        }
+
+        let a =["함수가","실행1<br>"];
+
+        f10(a[0],a[1]);
+
+
+        function f11(str1, str2){
+            document.write(str1+str2);
+        }
+
+        let ab ={a:"함수가", b:"실행2<br>"}
+
+        f11(ab.a, ab.b);
+
+        function f12(str1, str2){
+            document.write(str1+str2);
+        }
+
+        let abc = [{a:"함수3"}, {a:"실행3<br>"}]
+
+        f12(abc[0].a, abc[1].a);
+
+        //객체 생성자
+
+        function func10(str1, str2){
+            this.str1 = str1;
+            this.str2 = str2;
+            this.result = function(){
+                document.write(str1 +str2)
+            }
+        }
+
+        const info1 = new func10("함수5", "실행5");
+        info1.result();
+
+
+
+
+
+        
+
+
+
+
+        
+    </script>
+</body>
+
+</html>
