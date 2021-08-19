@@ -54,7 +54,11 @@ a {
 /* 목록 초기화 */
 ol,
 ul {
+<<<<<<< HEAD
+    list-style: none;
+=======
     list-style: none
+>>>>>>> cb97e1280378c29c63f5caa8730f1ebd0f9a98d5
 }
 
 /* 스타일 초기화 */
@@ -63,8 +67,12 @@ strong {
 }
 em {
     font-style: normal;
+<<<<<<< HEAD
+}
+=======
 }
 
 img {
     width: 100%;
 }
+>>>>>>> cb97e1280378c29c63f5caa8730f1ebd0f9a98d5
