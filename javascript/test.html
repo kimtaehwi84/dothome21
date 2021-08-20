@@ -10,122 +10,148 @@
 
 <body>
     <script>
-        //선언적 함수
+        //선언
         {
-    function func1(){
-        document.write("함수1<br>");
-    }
-    func1();
-
-        //익명 함수
-        const func2 =function() {
-            document.write("익명함수<br>");
+            function func() {
+                document.write("자바스크립트가 실행되었습니다.1");
+            }
+            func();
         }
-        func2();
 
-        //매개변수 함수
-        function func3(text){
+
+        //익명
+        {
+            const func2 = function () {
+                document.write("자바스크립트가 실행되었습니다.2");
+            }
+            func2();
+        }
+
+        //리턴
+        {
+            function func3() {
+                const str = "자바스크립트가 실행되었습니다.3";
+                return str;
+            }
+
+            document.write(func3());
+        }
+
+        //매개변수
+
+        function func4(text) {
             document.write(text);
         }
-        func3("매개변수 <br>");
+        func4("자바스크립트가 실행되었습니다.4<br>");
 
-        //
-        function func4(){
-            const text = "리턴값 함수";
-            return text;
+
+        // fon문 1-10
+
+        for (let i = 1; i <= 10; i++) {
+            document.write(i);
         }
-        document.write(func4());
 
-        func5 = () => {
-            document.write("선언적 - 화살표<br>")
+
+
+
+        const num = [1, 2, 3, 4, 5]
+
+        //for
+
+        for (let i = 0; i < num.length; i++) {
+            document.write(num[i]);
         }
-        func5();
-
-        const func6= () => {
-            document.write("익명함수 - 화살표<br>")
-        }
-        func6();
-
-        func7 = () => {
-            let str = "리턴 - 화살표"
-            return str;
-        }
-        document.write(func7());
-
-        const func8 = (str) => {
-            return str;
-        }
-        document.write(func8("화살표함수 : 익명함수 + 매개변수 + 리턴값<br>"));
-
-        const func9 = str => {
-            return str;
-        }
-        document.write(func9("화살표함수 : 익명함수 + 매개변수 + 리턴값 + 괄호생략<br>"));
-
-        const func10 = str => str;
-        document.write(func10("화살표함수 : 익명함수 + 매개변수 + 리턴값 + 괄호생략 + 리턴생략<br>"));
-
-        const func11= str => str;
-        document.write(func11("화살표함수 : 익명함수 + 매개변수 + 리턴값 + 괄호생략 + 리턴생략<br>"));
-    
-        function func12(str1, str2){
-            document.write(`${str1}가 ${str2}되었습니다.<br>`);
-        }
-        func12("함수","실행")
-
-        func13 = (str1, str2) => {
-            document.write(`${str1}가 ${str2}되었습니다.<br>`);
-        }
-        func13("함수","실행");
-
-        func14 = (str1, str2) => {
-            document.write(`${str1}가 ${str2}되었습니다.<br>`);
-        }
-        const a = "함수";
-        const b = "실행";
-
-        func14(a,b);
-
-        func15 = (str1, str2) => {
-            document.write(`${str1}가 ${str2}되었습니다.<br>`);
-        }
-        const c = ["함수", "실행"];
-
-        func15(c[0], c[1]);
 
 
-        
-        func16 = (str1, str2) => {
-            document.write(`${str1}가 ${str2}되었습니다.<br>`);
-        }
-        const d = [{a:"함수"}, {b:"실행"}];
+        //forEach (element, index, array)
+        num.forEach(function (el) {
+            document.write(el);
+        });
 
-        func16(d[0].a, d[1].b);
+        num.forEach((el) => {
+            document.write(el);
+        });
 
-        func17 = (str1, str2) => {
-            document.write(`${str1}가 ${str2}되었습니다.<br>`);
-        }
-        const e = {a:"함수" , b:"실행"};
+        num.forEach(el => {
+            document.write(el);
+        });
 
-        func17(e.a, e.b);
+        num.forEach(el => document.write(el));
 
 
-        const f = {
-            a: "함수",
-            b: "실행",
-            result : () => {
-                document.write(`${f.a}가 ${f.b}되었습니다.<br>`);
+
+        //for in
+
+            for (let el in num) {
+                document.write(num[el]);
             }
-        }
-        f.result();
-    }
 
-    
-        
-        
+        //for of
 
-
+        for (let el of num) {
+                document.write(el);
+            }
     </script>
 </body>
 
 </html>
+
+
+
+    <!-- cartType02 -->
+    <section class="cardType">
+        <div class="container">
+            <div class="cardType02">
+            <h2>KIM.TAEHWI</h2>
+            <p>웹디자이너, 웹 퍼블리셔, 프론트앤드 개발자를 위한 강의 사이트입니다.</p>
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="#">
+                        <img src="img/img2_01.jpg" alt="웹표준 사이트 만들기 관련 이미지입니다." class="card-img">
+                        <strong class="card-title">고양이 멈무1</strong>
+                        <span class="card-desc">고양이 야옹 멈무 멍멍멍 고양이 야옹 멈무 멍멍멍1</span>
+                        <span class="card-keyword">
+                            <span>#멈멈</span>
+                            <span>#야옹</span>
+                            <span class="but">SITE</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <img src="img/img2_02.jpg" alt="반응형 사이트 만들기 관련 이미지입니다." class="card-img">
+                        <strong class="card-title">고양이 멈무2</strong>
+                        <span class="card-desc">고양이 야옹 멈무 멍멍멍 고양이 야옹 멈무 멍멍멍2</span>
+                        <span class="card-keyword">
+                            <span>#멈머</span>
+                            <span>#애옹</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <img src="img/img2_03.jpg" alt="웹표준 사이트 만들기 관련 이미지입니다." class="card-img">
+                        <strong class="card-title">고양이 멈무3</strong>
+                        <span class="card-desc">고양이 야옹 멈무 멍멍멍 고양이 야옹 멈무 멍멍멍3</span>
+                        <span class="card-keyword">
+                            <span>#멈멈</span>
+                            <span>#야옹야옹</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">s
+                        <img src="img/img2_04.jpg" alt="반응형 사이트 만들기 관련 이미지입니다." class="card-img">
+                        <strong class="card-title">고양이 멈무4</strong>
+                        <span class="card-desc">고양이 야옹 멈무 멍멍멍 고양이 야옹 멈무 멍멍멍4</span>
+                        <span class="card-keyword">
+                            <span>#멍멍멍</span>
+                            <span>#야옹</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- //cartType02 -->
