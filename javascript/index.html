@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -5,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kIMTAEHWI | Javascript Reference</title>
+    <title>Javascript Reference</title>
     <style>
         @font-face {
             font-family: 'NEXON Lv1 Gothic OTF';
@@ -23,7 +24,6 @@
 
         * {
             margin: 0;
-            /* width: margin + padding */
             padding: 0;
             box-sizing: border-box;
         }
@@ -56,24 +56,33 @@
         }
 
         #contents h1 {
-            font-family: 'NEXON Lv1 Gothic OTF';
+            font-family: 'TmonMonsori';
             color: #0e43f1;
             font-size: 8vw;
+            text-transform: uppercase;
         }
 
-        #contents p {
+        #contents p a {
             font-family: 'NEXON Lv1 Gothic OTF';
-            background-color: #0e43f1;
+            background: #0e43f1;
             color: #fff;
             display: inline-block;
             padding: 15px 40px;
             border-radius: 50px;
             font-size: 16px;
-            margin-bottom: 5px;
+            margin-bottom: 2%;
+            border: 1px solid #fff;
+        } 
+        #contents p a:hover {
+            border: 1px solid #0e43f1;
+            background: #fff;
+            color: #0e43f1;
         }
+
         .menu li {
             display: inline;
         }
+
         .menu li a {
             font-family: 'NEXON Lv1 Gothic OTF';
             color: #0e43f1;
@@ -85,6 +94,7 @@
             margin: 4px 1px;
             transition: all 0.4s;
         }
+
         .menu li a:hover {
             box-shadow: inset 0 -100px 0 #0e43f1;
             color: #fff;
@@ -94,22 +104,27 @@
         @media (max-width: 800px) {
             #wrap {
                 height: auto;
+                /* height값 초기화 */
                 margin: 0;
                 border-width: 6px;
                 border-radius: 18px;
             }
+
             #contents {
                 border-width: 6px;
                 padding: 15% 2%;
             }
+
             #contents p,
             .menu li a {
                 font-size: 12px;
                 padding: 5px 20px;
             }
-    }
-            /* dog */
-            .wrap {
+
+        }
+
+        /* dog */
+        .wrap {
             width: 300px;
             height: 300px;
             background: #0066FF;
@@ -117,6 +132,7 @@
             box-shadow: 0 -10px 0 0 #0057D9;
             border-radius: 50%;
         }
+
         .body {
             width: 150px;
             height: 60px;
@@ -129,13 +145,29 @@
             -webkit-animation: squiggly-anim 0.4s infinite;
             animation: squiggly-anim 0.4s infinite;
         }
+
         @keyframes squiggly-anim {
-            0% {filter: url("#squiggly-0");}
-            25% {filter: url("#squiggly-1");}
-            50% {-webkit-filter: url("#squiggly-2");}
-            75% {filter: url("#squiggly-3");}
-            100% {filter: url("#squiggly-4");}
+            0% {
+                filter: url("#squiggly-0");
+            }
+
+            25% {
+                filter: url("#squiggly-1");
+            }
+
+            50% {
+                -webkit-filter: url("#squiggly-2");
+            }
+
+            75% {
+                filter: url("#squiggly-3");
+            }
+
+            100% {
+                filter: url("#squiggly-4");
+            }
         }
+
         .body .leg {
             width: 45px;
             height: 60px;
@@ -149,15 +181,18 @@
             transform-origin: 130% 0%;
             top: 0px;
         }
+
         .body .leg.r {
             left: auto;
             right: -15px;
             border-radius: 30px 60px 30px 30px;
             transform-origin: -30% 0%;
         }
+
         .body .leg.r .paw {
             transform-origin: 100% 0%;
         }
+
         .body .leg .paw {
             width: 45px;
             height: 40px;
@@ -169,6 +204,7 @@
             left: -2.5px;
             transform-origin: 0% 0%;
         }
+
         .body .leg .paw:before {
             content: "";
             position: absolute;
@@ -180,6 +216,7 @@
             border-radius: 50px 50px 0 0;
             box-shadow: 15px 0 0 #010101;
         }
+
         .body .spots {
             position: absolute;
             width: 100%;
@@ -189,7 +226,9 @@
             transform-style: preserve-3d;
             transform: translateZ(2px);
         }
-        .body .spots:before, .body .spots:after {
+
+        .body .spots:before,
+        .body .spots:after {
             content: "";
             position: absolute;
             width: 20%;
@@ -199,10 +238,12 @@
             border-radius: 0 20% 100% 0;
             transform: translateZ(2px);
         }
+
         .body .spots:after {
             right: 0;
             border-radius: 20% 0 0 100%;
         }
+
         .body .head {
             position: absolute;
             width: 150px;
@@ -213,6 +254,7 @@
             transform-style: preserve-3d;
             transform: translateZ(1px);
         }
+
         .body .head .inner {
             position: absolute;
             width: 100%;
@@ -221,6 +263,7 @@
             transform: translateZ(-2px);
             overflow: hidden;
         }
+
         .body .head .inner .spot {
             position: absolute;
             background: #252510;
@@ -231,6 +274,7 @@
             top: -25px;
             box-shadow: 0 0 0 150px #fff;
         }
+
         .body .head .ear {
             position: absolute;
             width: 65px;
@@ -245,6 +289,7 @@
             transform-origin: 100% 100%;
             border-radius: 100px 300px 50px 150px/100px 600px 50px 350px;
         }
+
         .body .head .ear:before {
             content: "";
             position: absolute;
@@ -257,6 +302,7 @@
             bottom: -35px;
             left: 20px;
         }
+
         .body .head .ear.right {
             left: auto;
             right: -10px;
@@ -265,6 +311,7 @@
             box-shadow: inset 5px 0 0 15px #fff;
             transform-origin: 0% 100%;
         }
+
         .body .head .ear.right:before {
             content: "";
             position: absolute;
@@ -278,6 +325,7 @@
             left: auto;
             right: 20px;
         }
+
         .body .head .eyes {
             position: absolute;
             width: 10px;
@@ -289,7 +337,9 @@
             overflow: hidden;
             transform: translateZ(2px);
         }
-        .body .head .eyes:before, .body .head .eyes:after {
+
+        .body .head .eyes:before,
+        .body .head .eyes:after {
             content: "";
             position: absolute;
             width: 100%;
@@ -301,13 +351,29 @@
             -webkit-animation: blink 5s ease-in-out infinite;
             animation: blink 5s ease-in-out infinite;
         }
+
         @keyframes blink {
-            90% {transform: translateY(-120%);}
-            92% {transform: translateY(0);}
-            94% {transform: translateY(-120%);}
-            96% {transform: translateY(0);}
-            98% {transform: translateY(-120%);}
+            90% {
+                transform: translateY(-120%);
+            }
+
+            92% {
+                transform: translateY(0);
+            }
+
+            94% {
+                transform: translateY(-120%);
+            }
+
+            96% {
+                transform: translateY(0);
+            }
+
+            98% {
+                transform: translateY(-120%);
+            }
         }
+
         .body .head .eyes:after {
             top: auto;
             bottom: 0;
@@ -315,21 +381,39 @@
             -webkit-animation: blink2 5s ease-in-out infinite;
             animation: blink2 5s ease-in-out infinite;
         }
+
         @keyframes blink2 {
-            90% {transform: translateY(120%);}
-            92% {transform: translateY(0);}
-            94% {transform: translateY(120%);}
-            96% {transform: translateY(0);}
-            98% {transform: translateY(120%);}
+            90% {
+                transform: translateY(120%);
+            }
+
+            92% {
+                transform: translateY(0);
+            }
+
+            94% {
+                transform: translateY(120%);
+            }
+
+            96% {
+                transform: translateY(0);
+            }
+
+            98% {
+                transform: translateY(120%);
+            }
         }
+
         .body .head .eyes:nth-of-type(2) {
             left: auto;
             right: 30px;
         }
+
         .body .head .eyes:nth-of-type(2):before,
         .body .head .eyes:nth-of-type(2):after {
             background: #fff;
         }
+
         .body .head .snout {
             position: absolute;
             width: 80px;
@@ -340,6 +424,7 @@
             bottom: 20px;
             transform: translateZ(2px);
         }
+
         .body .head .snout .nose {
             width: 30px;
             height: 25px;
@@ -349,6 +434,7 @@
             bottom: 30px;
             border-radius: 10px;
         }
+
         .body .head .snout .nose:before {
             content: "";
             position: absolute;
@@ -358,6 +444,7 @@
             bottom: -8px;
             left: calc(50% + 1px);
         }
+
         .body .head .snout .nose:after {
             content: "";
             position: absolute;
@@ -428,12 +515,11 @@
                         </filter>
                     </defs>
                 </svg>
-                  
             </div>
-            <h1>Javascript</h1>
+            <h1>자바스크립트</h1>
             <p>
                 <a href="index.html">자바스크립트 레퍼런스 북</a>
-                <a href="index2.html">제이쿼리 레퍼런스 북</a>            
+                <a href="index2.html">제이쿼리 레퍼런스 북</a>
             </p>
             <nav class="menu">
                 <ul>
@@ -475,92 +561,105 @@
             $outer = $('body'),
             container_w = $container.width(),
             container_h = $container.height();
-        $('body').on('mousemove.parallax', function(event) {
+        $('body').on('mousemove.parallax', function (event) {
             var pos_x = event.pageX,
                 pos_y = event.pageY,
                 left = 0,
                 bottom = 0,
                 top = 0;
-                left = container_w / 0.5 - pos_x;
-                top = container_h / 2 - pos_y;
-                bottom = container_h / 0.25 - (pos_y * 2.5);
+            left = container_w / 0.5 - pos_x;
+            top = container_h / 2 - pos_y;
+            bottom = container_h / 0.25 - (pos_y * 2.5);
             TweenMax.to(
                 $snout, 1, {
-                    css: { transform: 'translateX(' + left / -32 + 'px) translateY(' + top / -26 + 'px) translateZ(1px)'
-                },
-                ease:Expo.easeOut,
-                overwrite: 'all'
-            });
+                    css: {
+                        transform: 'translateX(' + left / -32 + 'px) translateY(' + top / -26 +
+                            'px) translateZ(1px)'
+                    },
+                    ease: Expo.easeOut,
+                    overwrite: 'all'
+                });
             TweenMax.to(
                 $spot, 1, {
-                css: {
-                    transform: 'translateX(' + left / -32 + 'px) translateY(' + top / -56 + 'px) translateZ(1px)'
-                },
-                ease:Expo.easeOut,
-                overwrite: 'all'
-            });
+                    css: {
+                        transform: 'translateX(' + left / -32 + 'px) translateY(' + top / -56 +
+                            'px) translateZ(1px)'
+                    },
+                    ease: Expo.easeOut,
+                    overwrite: 'all'
+                });
             TweenMax.to(
                 $eyes, 1, {
-                css: {
-                    transform: 'translateX(' + left / -40 + 'px) translateY(' + top / -40 + 'px) translateZ(0px)'
-                },
-                ease:Expo.easeOut,
-                overwrite: 'all'
-            });
+                    css: {
+                        transform: 'translateX(' + left / -40 + 'px) translateY(' + top / -40 +
+                            'px) translateZ(0px)'
+                    },
+                    ease: Expo.easeOut,
+                    overwrite: 'all'
+                });
             TweenMax.to(
                 $nose, 1, {
-                css: {
-                    transform: 'translateX(' + left / -40 + 'px) translateY(' + top / -50 + 'px) translateZ(0px)'
-                },
-                ease:Expo.easeOut,
-                overwrite: 'all'
-            });
+                    css: {
+                        transform: 'translateX(' + left / -40 + 'px) translateY(' + top / -50 +
+                            'px) translateZ(0px)'
+                    },
+                    ease: Expo.easeOut,
+                    overwrite: 'all'
+                });
             TweenMax.to(
                 $ear, 1, {
-                css: { transform: 'rotate(' + bottom / -60 + 'deg) translatex(' + left / 60 + 'px) translateY(' + top / 40 + 'px) translateZ(-2px)'},
-                ease:Expo.easeOut,
-                overwrite: 'all'
-            });
+                    css: {
+                        transform: 'rotate(' + bottom / -60 + 'deg) translatex(' + left / 60 +
+                            'px) translateY(' + top / 40 + 'px) translateZ(-2px)'
+                    },
+                    ease: Expo.easeOut,
+                    overwrite: 'all'
+                });
             TweenMax.to(
                 $rightear, 1, {
-                css: {
-                    transform: 'rotate(' + bottom / 60 + 'deg) translatex(' + left / 60 + 'px) translateY(' + top / 40 + 'px) translateZ(-2px)'
-                },
-                ease:Expo.easeOut,
-                overwrite: 'all'
-            });
+                    css: {
+                        transform: 'rotate(' + bottom / 60 + 'deg) translatex(' + left / 60 +
+                            'px) translateY(' + top / 40 + 'px) translateZ(-2px)'
+                    },
+                    ease: Expo.easeOut,
+                    overwrite: 'all'
+                });
             TweenMax.to(
                 $leftleg, 1, {
-                css: {
-                    transform: 'rotate(' + left / 30 + 'deg) translateY(' + top / -100 + 'px) translateZ(-2px)',
-                },
-                ease:Expo.easeOut,
-                overwrite: 'all'
-            });
+                    css: {
+                        transform: 'rotate(' + left / 30 + 'deg) translateY(' + top / -100 +
+                            'px) translateZ(-2px)',
+                    },
+                    ease: Expo.easeOut,
+                    overwrite: 'all'
+                });
             TweenMax.to(
                 $rightleg, 1, {
-                css: {
-                    transform: 'rotate(' + left / 30 + 'deg) translateY(' + top / -100 + 'px) translateZ(-2px)',
-                },
-                ease:Expo.easeOut,
-                overwrite: 'all'
-            });
+                    css: {
+                        transform: 'rotate(' + left / 30 + 'deg) translateY(' + top / -100 +
+                            'px) translateZ(-2px)',
+                    },
+                    ease: Expo.easeOut,
+                    overwrite: 'all'
+                });
             TweenMax.to(
                 $leftpaw, 1, {
-                css: {
-                    transform: 'rotate(' + left / -30 + 'deg) translateY(' + bottom / -120 + 'px) translatex(' + left / -50 + 'px) translateZ(2px)',
-                },
-                ease:Expo.easeOut,
-                overwrite: 'all'
-            });
+                    css: {
+                        transform: 'rotate(' + left / -30 + 'deg) translateY(' + bottom / -120 +
+                            'px) translatex(' + left / -50 + 'px) translateZ(2px)',
+                    },
+                    ease: Expo.easeOut,
+                    overwrite: 'all'
+                });
             TweenMax.to(
                 $rightpaw, 1, {
-                css: {
-                    transform: 'rotate(' + left / -30 + 'deg) translateY(' + bottom / -120 + 'px) translatex(' + left / -50 + 'px) translateZ(2px)',
-                },
-                ease:Expo.easeOut,
-                overwrite: 'all'
-            });
+                    css: {
+                        transform: 'rotate(' + left / -30 + 'deg) translateY(' + bottom / -120 +
+                            'px) translatex(' + left / -50 + 'px) translateZ(2px)',
+                    },
+                    ease: Expo.easeOut,
+                    overwrite: 'all'
+                });
         });
     </script>
 </body>
