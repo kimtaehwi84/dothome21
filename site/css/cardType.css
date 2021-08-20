@@ -156,7 +156,7 @@ body {
 .cardType03 p {
     display: inline;
     font-size: 18px;
-    line-height: 1.8;
+    line-height: 18px;
 }
 .cardType03 .new{
     color: #ff7300;
@@ -221,7 +221,7 @@ body {
     margin: 16px 0 0 0;
 }
 
-.cardType03 .card-wrap .but-red {
+.cardType03 .card-wrap .but-orange {
     font-size: 13px;
     font-weight: 400;
     display:inline-block;
