@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //선언
+        {
+            function func() {
+                document.write("자바스크립트가 실행되었습니다.1");
+            }
+            func();
+        }
+
+
+        //익명
+        {
+            const func2 = function () {
+                document.write("자바스크립트가 실행되었습니다.2");
+            }
+            func2();
+        }
+
+        //리턴
+        {
+            function func3() {
+                const str = "자바스크립트가 실행되었습니다.3";
+                return str;
+            }
+
+            document.write(func3());
+        }
+
+        //매개변수
+
+        function func4(text) {
+            document.write(text);
+        }
+        func4("자바스크립트가 실행되었습니다.4<br>");
+
+
+        // fon문 1-10
+
+        for (let i = 1; i <= 10; i++) {
+            document.write(i);
+        }
+
+
+
+
+        const num = [1, 2, 3, 4, 5]
+
+        //for
+
+        for (let i = 0; i < num.length; i++) {
+            document.write(num[i]);
+        }
+
+
+        //forEach (element, index, array)
+        num.forEach(function (el) {
+            document.write(el);
+        });
+
+        num.forEach((el) => {
+            document.write(el);
+        });
+
+        num.forEach(el => {
+            document.write(el);
+        });
+
+        num.forEach(el => document.write(el));
+
+
+
+        //for in
+
+            for (let el in num) {
+                document.write(num[el]);
+            }
+
+        //for of
+
+        for (let el of num) {
+                document.write(el);
+            }
+    </script>
+</body>
+
+</html>
+
+
+
+    <!-- cartType02 -->
+    <section class="cardType">
+        <div class="container">
+            <div class="cardType02">
+            <h2>KIM.TAEHWI</h2>
+            <p>웹디자이너, 웹 퍼블리셔, 프론트앤드 개발자를 위한 강의 사이트입니다.</p>
+            <div class="card-wrap">
+                <div class="card">
+                    <a href="#">
+                        <img src="img/img2_01.jpg" alt="웹표준 사이트 만들기 관련 이미지입니다." class="card-img">
+                        <strong class="card-title">고양이 멈무1</strong>
+                        <span class="card-desc">고양이 야옹 멈무 멍멍멍 고양이 야옹 멈무 멍멍멍1</span>
+                        <span class="card-keyword">
+                            <span>#멈멈</span>
+                            <span>#야옹</span>
+                            <span class="but">SITE</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <img src="img/img2_02.jpg" alt="반응형 사이트 만들기 관련 이미지입니다." class="card-img">
+                        <strong class="card-title">고양이 멈무2</strong>
+                        <span class="card-desc">고양이 야옹 멈무 멍멍멍 고양이 야옹 멈무 멍멍멍2</span>
+                        <span class="card-keyword">
+                            <span>#멈머</span>
+                            <span>#애옹</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <img src="img/img2_03.jpg" alt="웹표준 사이트 만들기 관련 이미지입니다." class="card-img">
+                        <strong class="card-title">고양이 멈무3</strong>
+                        <span class="card-desc">고양이 야옹 멈무 멍멍멍 고양이 야옹 멈무 멍멍멍3</span>
+                        <span class="card-keyword">
+                            <span>#멈멈</span>
+                            <span>#야옹야옹</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#">s
+                        <img src="img/img2_04.jpg" alt="반응형 사이트 만들기 관련 이미지입니다." class="card-img">
+                        <strong class="card-title">고양이 멈무4</strong>
+                        <span class="card-desc">고양이 야옹 멈무 멍멍멍 고양이 야옹 멈무 멍멍멍4</span>
+                        <span class="card-keyword">
+                            <span>#멍멍멍</span>
+                            <span>#야옹</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- //cartType02 -->
