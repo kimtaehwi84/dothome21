@@ -1,0 +1,174 @@
+/* imageType */
+body {
+    background-color: #f3f3f3;
+}
+/* imageType01 */
+.imageType {
+    margin: 100px 0;
+    background-color: #fff;
+    box-shadow: 0 0 50px rgba(0,0,0,0.1);
+}
+.imageType01 {
+    font-family: 'GmarketSans';
+    padding: 100px 0;
+    line-height: 1.4;
+}
+.imageType01 h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.imageType01 .wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.imageType01 .wrap .img {
+    position: relative;
+}
+.imageType01 .wrap .img .box {
+    font-weight: 300;
+    width: 480px;
+    height: 140px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    background-color: rgba(90, 84, 78, 0.5);
+    position: absolute;
+}
+
+.imageType01 .wrap .img .box .image {
+   
+    width: 590px;
+    height: 465px;
+    margin: 42px 20px 0 0;
+}
+
+.imageType01 .wrap .img .box .title {
+    font-size: 30px;
+    font-weight: 500;
+    display: block;
+    color: #fff;
+    margin: 11px 15px 2px 15px;
+}
+.imageType01 .wrap .img .box .desc {
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0 15px 15px 15px;
+    overflow: hidden;
+}
+
+.imageType01 .wrap .img .box .but {
+    width: 85px;
+    height: 22px;
+    margin: 6px 325px 0 13px;
+    padding: 3px 12px 3px 12px;
+    border-radius: 10px;
+    background-color: #877e49;
+    color: #fff;
+}
+
+/* imageType02 */
+.imageType02 {
+    font-family: 'GmarketSans';
+    padding: 100px 0;
+    line-height: 1.4;
+}
+.imageType02 h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.imageType02 .wrap {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.imageType02 .wrap .img {
+    position: relative;
+}
+.imageType02 .wrap .img .box {
+    font-weight: 300;
+    width: 387px;
+    height: 100px;
+    bottom: 100px;
+    background-color: rgba(196, 196, 196, 0.5);
+    position: absolute;
+    text-align: center;   
+}
+.imageType02 .wrap .img .box .title {
+    font-size: 30px;
+    color: #fff;
+    white-space: nowrap;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.imageType02 .img .but{
+    font-size: 14px;
+    color: #fff;
+    border-radius: 40px;
+    background-color:  #877e49;
+    padding: 6px 24px;
+}
+
+
+
+/* imageType03 */
+.imageType03 {
+    font-family: 'GmarketSans';
+    font-size: 14px;
+    font-weight: 500;
+    padding: 100px 0;
+  }
+  
+  .imageType03 h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 45px;
+    color: #451f1f;
+  }
+  
+  .imageType03 .wrap {
+    display: grid;
+    grid-template-columns: repeat(4,285px);
+    grid-template-rows: 285px;
+    gap: 20px;
+  }
+  
+  .imageType03 .wrap .img:first-child{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .imageType03 .wrap .img{
+    position: relative;
+  }
+  .imageType03 .wrap .img .contents {
+    width: 420px;
+    height: 45px;
+    position: absolute;
+    bottom: 20px; left: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 114px 0 10px;
+    padding: 17px 19px 62px;
+  }
+  .imageType03 .wrap .img .box {
+    height: 22px;
+    position: absolute;
+    bottom: 20px; left: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #634444;
+    padding: 0px 8px 0px 9px;
+  }
+  .imageType03 .wrap .img .contents .title {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1;
+  }
+  .imageType03 .wrap .img .contents .desc {
+    line-height: 1.4;
+    margin-top: 10px;
+  }
