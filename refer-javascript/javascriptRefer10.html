@@ -1,81 +1,96 @@
-
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Reference</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/themes/prism-okaidia.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/themes/prism-okaidia.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
         .ex1 {
             display: flex;
             justify-content: space-between;
         }
-        .ex1 > div {
+
+        .ex1>div {
             border: 4px dashed transparent;
             width: 18%;
         }
-        .ex1 > div.active {
+
+        .ex1>div.active {
             border: 4px dashed #002fff;
             background-color: #002fff;
             border-radius: 15px;
         }
-        .ex1 > div.active img {
+
+        .ex1>div.active img {
             opacity: 0.4;
         }
-        .ex1 > div img {
+
+        .ex1>div img {
             width: 100%;
             border-radius: 15px;
             vertical-align: top;
         }
+
         /* ex2 */
         .ex2 {
             display: flex;
             justify-content: space-between;
         }
-        .ex2 > div {
+
+        .ex2>div {
             width: 18%;
             border: 4px dashed transparent;
         }
-        .ex2 > div.active {
+
+        .ex2>div.active {
             border: 4px dashed #002fff;
             background-color: #002fff;
             border-radius: 15px;
         }
-        .ex2 > div.active img {
+
+        .ex2>div.active img {
             opacity: 0.4;
         }
-        .ex2 > div img {
+
+        .ex2>div img {
             width: 100%;
             border-radius: 15px;
             vertical-align: top;
         }
+
         /* ex2 */
         .ex3 {
             display: flex;
             justify-content: space-between;
         }
-        .ex3 > div {
+
+        .ex3>div {
             width: 18%;
             border: 4px dashed transparent;
         }
-        .ex3 > div.active {
+
+        .ex3>div.active {
             border: 4px dashed #002fff;
             background-color: #002fff;
             border-radius: 15px;
         }
-        .ex3 > div.active img {
+
+        .ex3>div.active img {
             opacity: 0.4;
         }
-        .ex3 > div img {
+
+        .ex3>div img {
             width: 100%;
             border-radius: 15px;
             vertical-align: top;
         }
     </style>
 </head>
+
 <body>
     <div id="wrap">
         <main id="contents">
@@ -94,6 +109,7 @@
                     <li><a href="javascriptRefer06.html">배열 객체</a></li>
                     <li><a href="javascriptRefer07.html">날짜 객체</a></li>
                     <li><a href="javascriptRefer08.html">수학 객체</a></li>
+                    <li><a href="javascriptRefer14.html">숫자 객체</a></li>
                     <li><a href="javascriptRefer09.html">브라우저 객체</a></li>
                     <li class="active"><a href="javascriptRefer10.html">요소 객체</a></li>
                     <li><a href="javascriptRefer11.html">이벤트 객체</a></li>
@@ -103,15 +119,27 @@
                     <li><a href="javascriptRefer13.html">알고리즘</a></li>
                 </ul>
             </nav>
-        
+
             <hr>
 
             <div class="list">
                 <ol>
-                    <li>요소 객체 : 클래스 메서드 : .classList.add()</li>
-                    <li>요소 객체 : 클래스 메서드 : .classList.remove()</li>
-                    <li>요소 객체 : 클래스 메서드 : .classList.toggle()</li>
-                    <li>요소 객체 : 클래스 메서드 : .classList.contains()</li>
+                    <li><a href=#sample01>요소 객체 : 선택자 : querySelector() : 요소 선택하기</a></li>
+                    <li><a href=#sample01>요소 객체 : 선택자 : querySelectorAll() : 모든 요소 선택하기</a></li>
+                    <li><a href=#sample01>요소 객체 : 선택자 : document.getElementById() : 아이디 요소 선택하기</a></li>
+                    <li><a href=#sample01>요소 객체 : 선택자 : document.getElementByIdClassName() : 클래스 요소 선택하기</a></li>
+                    <br>
+                    <li><a href=#sample01>요소 객체 : classList 속성 : .classList.add() : 클래스 추가</a></li>
+                    <li><a href=#sample01>요소 객체 : classList 속성 : .classList.remove() : 클래스 삭제</a></li>
+                    <li><a href=#sample01>요소 객체 : classList 속성 : .classList.toggle() : 클래스 추가/삭제</a></li>
+                    <li><a href=#sample01>요소 객체 : classList 속성 : .classList.contains() : 클래스 존재 여부 확인</a></li>
+                    <br>
+                    <li><a href=#sample01>요소 객체 : element 속성 : element.clientWidth() : 요소의 가로 값 가져오기 (패딩포함)</a></li>
+                    <li><a href=#sample01>요소 객체 : element 속성 : element.clientHeight() : 요소의 세로 값 가져오기 (패팅포함)</a></li>
+                    <li><a href=#sample01>요소 객체 : element 속성 : element.offsetWidth() : 요소의 가로 값 가져오기 (패딩/보더 포함)</a></li>
+                    <li><a href=#sample01>요소 객체 : element 속성 : element.offsetHeight() : 요소의 가로 값 가져오기 (패딩/보더 포함)</a></li>
+                    <li><a href=#sample01>요소 객체 : element 메서드 : element.getBoundingClientRect() : 요소의 정보 값 가져오기</a></li>
+
                 </ol>
             </div>
 
@@ -133,7 +161,7 @@
                     <a href="#c" class="btn1-2">클릭하면 모든 이미지에 클래스(active)를 삭제합니다.</a>
                 </div>
                 <div class="code">
-<pre class="line-numbers"><code class="language-js">{
+                    <pre class="line-numbers"><code class="language-js">{
     document.querySelector(".btn1-1").addEventListener("click", function () {
         document.querySelectorAll(".ex1 div").forEach((el) => {
             el.classList.add("active");
@@ -164,8 +192,8 @@
                 document.querySelector(".btn1-1").addEventListener("click", function () {
                     document.querySelectorAll(".ex1 div").forEach((el) => {
                         el.classList.add("active");
-                        });
-                    })
+                    });
+                })
 
                 // $(".btn1-2").click(function(){
                 // $(".ex1 div").removeClass("active");
@@ -174,8 +202,8 @@
                 document.querySelector(".btn1-2").addEventListener("click", function () {
                     document.querySelectorAll(".ex1 div").forEach((el) => {
                         el.classList.remove("active");
-                        })
-                    });
+                    })
+                });
             </script>
             <!-- //sample01 end-->
 
@@ -195,7 +223,7 @@
                     <a href="#c" class="btn2-1">이미지를 클릭하면 클래스(active)를 추가/삭제합니다.</a>
                 </div>
                 <div class="code">
-<pre class="line-numbers"><code class="language-js">{
+                    <pre class="line-numbers"><code class="language-js">{
     document.querySelectorAll(".ex2 div").forEach((el) => {
          el.addEventListener("click", function(){
              document.querySelectorAll(".ex2 div").forEach((el) => {
@@ -250,7 +278,6 @@
                         this.classList.toggle("active");
                     });
                 })
-
             </script>
             <!-- //sample02 end-->
 
@@ -270,7 +297,7 @@
                     <a href="#c" class="btn3-1">클릭하면 .active 클래스를 찾은 후에 클래스를 제거합니다.</a>
                 </div>
                 <div class="code">
-<pre class="line-numbers"><code class="language-js">{
+                    <pre class="line-numbers"><code class="language-js">{
     document.querySelector(".btn3-0").addEventListener("click", function(){
         document.querySelector(".ex3 > div:nth-child(1)").classList.add("active");
         document.querySelector(".ex3 > div:nth-child(4)").classList.add("active");
@@ -302,10 +329,10 @@
             </div>
             <hr>
             <script>
-                document.querySelector(".btn3-0").addEventListener("click", function(){
+                document.querySelector(".btn3-0").addEventListener("click", function () {
                     document.querySelector(".ex3 > div:nth-child(1)").classList.add("active");
                     document.querySelector(".ex3 > div:nth-child(4)").classList.add("active");
-                })    
+                })
 
                 //리셋버튼을 클릭하면 첫번째, 네번째에 클래스 추가
                 // $(".btn3-0").click(function(){
@@ -316,8 +343,8 @@
 
                 document.querySelector(".btn3-1").addEventListener("click", () => {
                     document.querySelectorAll(".ex3 > div").forEach(el => {
-                        if ( el.classList.contains("active")) {
-                                el.classList.remove("active");
+                        if (el.classList.contains("active")) {
+                            el.classList.remove("active");
                         }
                     })
                 });
@@ -329,13 +356,127 @@
                 // });
             </script>
             <!-- //sample03 end-->
+
+            <style>
+                .ex4 {
+                    min-height: 300px;
+                    position: relative;
+                }
+
+                .ex4 .circle {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    display: block;
+                    height: 100px;
+                    width: 100px;
+                    padding: 10px;
+                    margin: 10px;
+                    border: 5px solid #eb97d3;
+                    box-sizing: content-box;
+                    border-radius: 50%;
+                    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+                }
+            </style>
+
+            <!-- sample04 -->
+            <div id="sample04" class="sample">
+                <h2>04. .clientWidth .clientHeight .offsetWidth .offsetHeight .getBoundingClientRect()<span class="dot"></span></h2>
+                <div class="view ex4">
+                    <div class="circle circle4"></div>
+                    <p class="text text4">여기는 텍스트 영역입니다.</p>
+                </div>
+                <div class="btn">
+                    <a href="#sample04" class="btn4-1">클릭하면 원의 가로 값(clientWidth)을 구합니다.</a>
+                    <a href="#sample04" class="btn4-2">클릭하면 원의 세로 값(clientHeight)을 구합니다.</a>
+                    <a href="#c" class="btn4-3">클릭하면 원의 가로 값(offsetWidth)을 구합니다.</a>
+                    <a href="#c" class="btn4-4">클릭하면 원의 세로로 값(offsetHeight)을 구합니다.</a>
+                    <a href="#c" class="btn4-5">클릭하면 원의 가로 값(getBoundingClientRect)을 구합니다.</a>
+                    
+                </div>
+                <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    const cw = document.querySelector(".circle4").clientWidth;
+    const ch = document.querySelector(".circle4").clientHeight;
+    const ow = document.querySelector(".circle4").offsetWidth;
+    const oh = document.querySelector(".circle4").offsetHeight;
+    const rect = document.querySelector(".circle4").getBoundingClientRect();        
+    
+    document.querySelector(".btn4-1").addEventListener("click", function(){
+        document.querySelector(".text4").innerHTML = "이 원의 가로 값은" + cw + "px 입니다.";
+    });
+    document.querySelector(".btn4-2").addEventListener("click", function(){
+        document.querySelector(".text4").innerHTML = "이 원의 세로 값은" + ch + "px 입니다.";
+    });
+    document.querySelector(".btn4-3").addEventListener("click", function(){
+        document.querySelector(".text4").innerHTML = "이 원의 가로 값은" + ow + "px 입니다.";
+    });
+    document.querySelector(".btn4-4").addEventListener("click", function(){
+        document.querySelector(".text4").innerHTML = "이 원의 세로 값은" + oh + "px 입니다.";
+    });
+    document.querySelector(".btn4-5").addEventListener("click", function(){
+        document.querySelector(".text4").innerHTML = `
+        이 원의 세로 값은 ${parseInt(rect.x)} px 입니다.<br>
+        이 원의 세로 값은 ${parseInt(rect.y)} px 입니다.<br>
+        이 원의 세로 값은 ${parseInt(rect.top)} px 입니다.<br>
+        이 원의 세로 값은 ${parseInt(rect.left)} px 입니다.<br>
+        이 원의 세로 값은 ${parseInt(rect.bottom)} px 입니다.<br>
+        이 원의 세로 값은 ${parseInt(rect.right)} px 입니다.<br>
+        이 원의 세로 값은 ${parseInt(rect.width)} px 입니다.<br>
+        이 원의 세로 값은 ${parseInt(rect.height)} px 입니다.
+        `;
+
+    });
+}
+            </code></pre>
+                </div>
+            </div>
+            <hr>
+            <script>
+                const cw = document.querySelector(".circle4").clientWidth;
+                const ch = document.querySelector(".circle4").clientHeight;
+                const ow = document.querySelector(".circle4").offsetWidth;
+                const oh = document.querySelector(".circle4").offsetHeight;
+                const rect = document.querySelector(".circle4").getBoundingClientRect();        
+                
+                document.querySelector(".btn4-1").addEventListener("click", function(){
+                    document.querySelector(".text4").innerHTML = "이 원의 가로 값은" + cw + "px 입니다.";
+                });
+                document.querySelector(".btn4-2").addEventListener("click", function(){
+                    document.querySelector(".text4").innerHTML = "이 원의 세로 값은" + ch + "px 입니다.";
+                });
+                document.querySelector(".btn4-3").addEventListener("click", function(){
+                    document.querySelector(".text4").innerHTML = "이 원의 가로 값은" + ow + "px 입니다.";
+                });
+                document.querySelector(".btn4-4").addEventListener("click", function(){
+                    document.querySelector(".text4").innerHTML = "이 원의 세로 값은" + oh + "px 입니다.";
+                });
+                document.querySelector(".btn4-5").addEventListener("click", function(){
+                    document.querySelector(".text4").innerHTML = `
+                    이 원의 세로 값은 ${parseInt(rect.x)} px 입니다.<br>
+                    이 원의 세로 값은 ${parseInt(rect.y)} px 입니다.<br>
+                    이 원의 세로 값은 ${parseInt(rect.top)} px 입니다.<br>
+                    이 원의 세로 값은 ${parseInt(rect.left)} px 입니다.<br>
+                    이 원의 세로 값은 ${parseInt(rect.bottom)} px 입니다.<br>
+                    이 원의 세로 값은 ${parseInt(rect.right)} px 입니다.<br>
+                    이 원의 세로 값은 ${parseInt(rect.width)} px 입니다.<br>
+                    이 원의 세로 값은 ${parseInt(rect.height)} px 입니다.
+                    `;
+
+                });
+
+
+            </script>
+            <!-- //sample04 end-->
         </main>
     </div>
 
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/prism.min.js"></script>
     <script>
-        
+
     </script>
 </body>
+
 </html>

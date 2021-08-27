@@ -1,31 +1,31 @@
-/* imgType */
+/* imageType */
 body {
     background-color: #f3f3f3;
 }
-/* imgType01 */
-.imgType {
+/* imageType01
+.imageType {
     margin: 100px 0;
     background-color: #fff;
     box-shadow: 0 0 50px rgba(0,0,0,0.1);
 }
-.imgType01 {
+.imageType01 {
     font-family: 'GmarketSans';
     padding: 100px 0;
     line-height: 1.4;
 }
-.imgType01 h2 {
+.imageType01 h2 {
     font-size: 50px;
     font-weight: 500;
     margin-bottom: 40px;
 }
-.imgType01 .wrap {
+.imageType01 .image-wrap {
     display: flex;
     justify-content: space-between;
 }
-.imgType01 .wrap .img {
+.imageType01 .image-wrap .image {
     position: relative;
 }
-.imgType01 .wrap .img .box {
+.imageType01 .image .image-cont {
     font-weight: 300;
     width: 480px;
     height: 140px;
@@ -36,21 +36,14 @@ body {
     position: absolute;
 }
 
-.imgType1 .wrap .img .box .image {
-   
-    width: 590px;
-    height: 465px;
-    margin: 42px 20px 0 0;
-}
-
-.imgType01 .wrap .img .box .title {
+.imageType01 .image .image-cont .image-title {
     font-size: 30px;
     font-weight: 500;
     display: block;
     color: #fff;
     margin: 11px 15px 2px 15px;
 }
-.imgType01 .wrap .img .box .desc {
+.imageType01 .image .image-cont .image-desc {
     color: #fff;
     display: block;
     font-size: 14px;
@@ -59,7 +52,7 @@ body {
     overflow: hidden;
 }
 
-.imgType01 .wrap .img .box .but {
+.imageType01 .image .image-cont .image-btn {
     width: 85px;
     height: 22px;
     margin: 6px 325px 0 13px;
@@ -67,28 +60,108 @@ body {
     border-radius: 10px;
     background-color: #877e49;
     color: #fff;
+} */
+
+/* imageType01 선생님 정리
+
+ .imageType01 {
+    margin: 100px 0;
+    background-color: #fff;
+    box-shadow: 0 0 50px rgba(0,0,0,0.1);
+    font-family: 'GmarketSans';
 }
 
-/* imgType02 */
-.imgType02 {
+.imageType01 h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 36px;
+}
+
+.imageType01 .image-wrap {
+    overflow: hidden;
+
+}
+
+.imageType01 .image {
+    position: relative; ===> cont 박스의 기준점
+    float: left;
+    width: 50;
+    width: 590px;
+    height: 465px;
+}
+
+.imageType01 .image:first-child {
+    margin-right: 20px;
+}
+
+.imageType01 .image .image-cont {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 30px;
+    color: #fff;
+}
+
+.imageType01 .image .image-title {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 4px;
+
+}
+.imageType01 .image .image-desc {
+    font-size: 14px;
+    font-weight: 300;
+    padding-right: 20%;
+    word-break: keep-all;
+}
+.imageType01 .image .image-btn {
+    padding: 8px 18px;
+    background-color: #5255d5;
+    display: inline-block;
+    background-color: #554554;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.imageType01 .image .image-btn.red {
+    background-color: #5614d2;
+}
+
+.imageType01 .image .image-btn.red {
+    background-color: #5614d2;
+}
+
+.imageType01 .image .image-cont.s2 .image-desc {
+    padding-right: 0;
+}
+
+.imageType01 .image .image-cont.s2 .image-btn {
+    padding-right: 0;
+
+}
+*/
+
+
+/* imageType02 
+.imageType02 {
     font-family: 'GmarketSans';
     padding: 100px 0;
     line-height: 1.4;
 }
-.imgType02 h2 {
+.imageType02 h2 {
     font-size: 50px;
     font-weight: 500;
     margin-bottom: 40px;
 }
-.imgType02 .wrap {
+.imageType02 .wrap {
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
-.imgType02 .wrap .img {
+.imageType02 .wrap .img {
     position: relative;
 }
-.imgType02 .wrap .img .box {
+.imageType02 .wrap .img .box {
     font-weight: 300;
     width: 387px;
     height: 100px;
@@ -97,7 +170,7 @@ body {
     position: absolute;
     text-align: center;   
 }
-.imgType02 .wrap .img .box .title {
+.imageType02 .wrap .img .box .title {
     font-size: 30px;
     color: #fff;
     white-space: nowrap;
@@ -105,48 +178,48 @@ body {
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.imgType02 .img .but{
+.imageType02 .img .but{
     font-size: 14px;
     color: #fff;
     border-radius: 40px;
     background-color:  #877e49;
     padding: 6px 24px;
-}
+} */
 
 
 
-/* imgType03 */
-.imgType03 {
+/* imageType03 
+.imageType03 {
     font-family: 'GmarketSans';
     font-size: 14px;
     font-weight: 500;
     padding: 100px 0;
   }
   
-  .imgType03 h2 {
+  .imageType03 h2 {
     font-size: 50px;
     font-weight: 500;
     margin-bottom: 45px;
     color: #451f1f;
   }
   
-  .imgType03 .wrap {
+  .imageType03 .wrap {
     display: grid;
     grid-template-columns: repeat(4,285px);
     grid-template-rows: 285px;
     gap: 20px;
   }
   
-  .imgType03 .wrap .img:first-child{
+  .imageType03 .wrap .img:first-child{
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
   }
-  .imgType03 .wrap .img{
+  .imageType03 .wrap .img{
     position: relative;
   }
-  .imgType03 .wrap .img .contents {
+  .imageType03 .wrap .img .contents {
     width: 420px;
     height: 45px;
     position: absolute;
@@ -155,7 +228,7 @@ body {
     margin: 0 114px 0 10px;
     padding: 17px 19px 62px;
   }
-  .imgType03 .wrap .img .box {
+  .imageType03 .wrap .img .box {
     height: 22px;
     position: absolute;
     bottom: 20px; left: 20px;
@@ -163,12 +236,84 @@ body {
     color: #634444;
     padding: 0px 8px 0px 9px;
   }
-  .imgType03 .wrap .img .contents .title {
+  .imageType03 .wrap .img .contents .title {
     font-size: 36px;
     font-weight: 500;
     line-height: 1;
   }
-  .imgType03 .wrap .img .contents .desc {
+  .imageType03 .wrap .img .contents .desc {
     line-height: 1.4;
     margin-top: 10px;
+  }*/
+
+  /* imageType02*/
+
+  .imageType02 {
+    font-family: 'GmarketSans';
+    padding: 100px 0;
   }
+  .imageType02 h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+  .imageType02 .image-wrap {
+      display: flex;
+      justify-content: space-between;
+  }
+  .imageType02  .image {
+      width: 386px;
+      position: relative;
+      perspective: 800px;
+  }
+  .imageType02 .image::after {
+    content: '';
+    background:#fff;
+    display: block;
+    position: absolute;
+    left: 30px; top:30px; right:30px; bottom:30px;
+    opacity: 0;
+    transform: rotateX(-90deg);
+    transition: all 0.4s ease-in-out;
+
+}
+.imageType02 .image:hover::after {
+    opacity: 0.9;
+    transform: rotateX(0deg);
+
+}
+  .imageType02  .image-img {}
+  .imageType02  .image-cont {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      color: #fff;
+      text-align: center;
+      opacity: 0;
+      z-index: 1000;
+      transition: all 0.3s ease-out;
+
+  }
+  .imageType02  .image:hover .image-cont {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+  }
+  .imageType02 .image .image-title {
+      font-size: 30px;
+      font-weight: 500;
+      color: #000;
+  }
+  .imageType02 .image .image-btn {
+      color: #fff;
+      padding: 7px 24px 5px 24px;
+      background: #000;
+      border-radius: 40px;
+      font-weight: 300;
+      margin-top: 5px;
+      display: inline-block;
+      
+  }
+
+  
+
