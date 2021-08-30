@@ -1,66 +1,93 @@
 /* imageType */
+
 body {
-    background-color: #f3f3f3;
+    background: #f3f3f3;
 }
-/* imageType01
 .imageType {
-    margin: 100px 0;
+    margin: 150px 0;
     background-color: #fff;
-    box-shadow: 0 0 50px rgba(0,0,0,0.1);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
 }
+
+/* imageType01 */
 .imageType01 {
     font-family: 'GmarketSans';
     padding: 100px 0;
-    line-height: 1.4;
 }
+
 .imageType01 h2 {
     font-size: 50px;
     font-weight: 500;
-    margin-bottom: 40px;
-}
-.imageType01 .image-wrap {
-    display: flex;
-    justify-content: space-between;
-}
-.imageType01 .image-wrap .image {
-    position: relative;
-}
-.imageType01 .image .image-cont {
-    font-weight: 300;
-    width: 480px;
-    height: 140px;
-    left: 30px;
-    right: 30px;
-    bottom: 30px;
-    background-color: rgba(90, 84, 78, 0.5);
-    position: absolute;
+    margin-bottom: 36px;
 }
 
-.imageType01 .image .image-cont .image-title {
-    font-size: 30px;
-    font-weight: 500;
-    display: block;
-    color: #fff;
-    margin: 11px 15px 2px 15px;
-}
-.imageType01 .image .image-cont .image-desc {
-    color: #fff;
-    display: block;
-    font-size: 14px;
-    font-weight: 300;
-    margin: 0 15px 15px 15px;
+.imageType01 .image-wrap {
     overflow: hidden;
 }
 
-.imageType01 .image .image-cont .image-btn {
-    width: 85px;
-    height: 22px;
-    margin: 6px 325px 0 13px;
-    padding: 3px 12px 3px 12px;
-    border-radius: 10px;
-    background-color: #877e49;
+.imageType01 .image {
+    position: relative;
+    float: left;
+    width: 590px;
+    height: 385px;
+    overflow: hidden;
+}
+
+.imageType01 .image:first-child {
+    margin-right: 20px;
+    background-color: #9a481d;
+}
+
+.imageType01 .image:last-child {
+    background-color: #b59140;
+}
+
+.imageType01 .image .image-cont {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
     color: #fff;
-} */
+}
+
+.imageType01 .image .image-title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+
+.imageType01 .image .image-desc {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    padding-right: 30%;
+    word-break: keep-all;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+
+.imageType01 .image .image-btn {
+    padding: 8px 18px;
+    display: inline-block;
+    background-color: #777;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.imageType01 .image .image-btn.green {
+    background-color: #45801f;
+}
+
+.imageType01 .image .image-btn.yellow {
+    background-color: #B59140;
+}
+
+
+
+
 
 /* imageType01 선생님 정리
 
@@ -141,54 +168,81 @@ body {
 }
 */
 
+/* imageType02*/
 
-/* imageType02 
 .imageType02 {
     font-family: 'GmarketSans';
     padding: 100px 0;
-    line-height: 1.4;
-}
-.imageType02 h2 {
+  }
+  .imageType02 h2 {
     font-size: 50px;
     font-weight: 500;
     margin-bottom: 40px;
-}
-.imageType02 .wrap {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-.imageType02 .wrap .img {
-    position: relative;
-}
-.imageType02 .wrap .img .box {
-    font-weight: 300;
-    width: 387px;
-    height: 100px;
-    bottom: 100px;
-    background-color: rgba(196, 196, 196, 0.5);
-    position: absolute;
-    text-align: center;   
-}
-.imageType02 .wrap .img .box .title {
-    font-size: 30px;
-    color: #fff;
-    white-space: nowrap;
+  }
+  .imageType02 .image-wrap {
+      display: flex;
+      justify-content: space-between;
+  }
+  .imageType02  .image {
+      width: 386px;
+      position: relative;
+      perspective: 800px;
+  }
+  .imageType02 .image::after {
+    content: '';
+    background:#fff;
     display: block;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    position: absolute;
+    left: 30px; top:30px; right:30px; bottom:30px;
+    opacity: 0;
+    transform: rotateX(-90deg);
+    transition: all 0.4s ease-in-out;
+
 }
-.imageType02 .img .but{
-    font-size: 14px;
-    color: #fff;
-    border-radius: 40px;
-    background-color:  #877e49;
-    padding: 6px 24px;
-} */
+.imageType02 .image:hover::after {
+    opacity: 0.9;
+    transform: rotateX(0deg);
+
+}
+
+  .imageType02  .image-cont {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      color: #fff;
+      text-align: center;
+      opacity: 0;
+      z-index: 1000;
+      transition: all 0.3s ease-out;
+
+  }
+  .imageType02  .image:hover .image-cont {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+  }
+  .imageType02 .image .image-title {
+      font-size: 30px;
+      font-weight: 500;
+      color: #000;
+  }
+  .imageType02 .image .image-btn {
+      color: #fff;
+      padding: 7px 24px 5px 24px;
+      background: #000;
+      border-radius: 40px;
+      font-weight: 300;
+      margin-top: 5px;
+      display: inline-block;
+      
+  }
+
+  
 
 
 
-/* imageType03 
+
+/* imageType03 */
 .imageType03 {
     font-family: 'GmarketSans';
     font-size: 14px;
@@ -244,76 +298,6 @@ body {
   .imageType03 .wrap .img .contents .desc {
     line-height: 1.4;
     margin-top: 10px;
-  }*/
-
-  /* imageType02*/
-
-  .imageType02 {
-    font-family: 'GmarketSans';
-    padding: 100px 0;
-  }
-  .imageType02 h2 {
-    font-size: 50px;
-    font-weight: 500;
-    margin-bottom: 40px;
-  }
-  .imageType02 .image-wrap {
-      display: flex;
-      justify-content: space-between;
-  }
-  .imageType02  .image {
-      width: 386px;
-      position: relative;
-      perspective: 800px;
-  }
-  .imageType02 .image::after {
-    content: '';
-    background:#fff;
-    display: block;
-    position: absolute;
-    left: 30px; top:30px; right:30px; bottom:30px;
-    opacity: 0;
-    transform: rotateX(-90deg);
-    transition: all 0.4s ease-in-out;
-
-}
-.imageType02 .image:hover::after {
-    opacity: 0.9;
-    transform: rotateX(0deg);
-
-}
-  .imageType02  .image-img {}
-  .imageType02  .image-cont {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, 50%);
-      color: #fff;
-      text-align: center;
-      opacity: 0;
-      z-index: 1000;
-      transition: all 0.3s ease-out;
-
-  }
-  .imageType02  .image:hover .image-cont {
-      opacity: 1;
-      transform: translate(-50%, -50%);
-  }
-  .imageType02 .image .image-title {
-      font-size: 30px;
-      font-weight: 500;
-      color: #000;
-  }
-  .imageType02 .image .image-btn {
-      color: #fff;
-      padding: 7px 24px 5px 24px;
-      background: #000;
-      border-radius: 40px;
-      font-weight: 300;
-      margin-top: 5px;
-      display: inline-block;
-      
   }
 
-  
 
