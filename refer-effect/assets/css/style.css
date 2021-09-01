@@ -187,8 +187,8 @@ figcaption {
 }
 
 #main.menu {
-  background: -webkit-gradient(linear, left bottom, left top, from(#a8edea), to(#fed6e3));
-  background: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#2f9c97), to(#d85a82));
+  background: linear-gradient(to top, #2f9c97 0%, #d85a82 100%);
 }
 
 #main.mouse {
@@ -207,7 +207,7 @@ figcaption {
 }
 
 #main.game {
-  background: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+  background: linear-gradient(-225deg, #1b9b98 0%, #817bcc 56%, #e07e8b 100%);
 }
 
 #contents h1 {
@@ -224,8 +224,8 @@ figcaption {
   letter-spacing: 1vw;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#580685), to(#f3b2c5));
-  background-image: linear-gradient(to bottom, #580685, #f3b2c5);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #580685), to(#f3b2c5));
+  background-image: linear-gradient(to bottom, #580685 20%, #f3b2c5);
 }
 
 #nav {

@@ -85,11 +85,11 @@ $font-Nexon1: 'NEXONLv1Gothic';
 $font-Nexon2: 'NEXONLv2Gothic';
 
 $gradient1: linear-gradient(to bottom,  #11e8bb 0%,#8200c9 100%); 
-$gradient2: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+$gradient2: linear-gradient(to top, #2f9c97 0%, #d85a82 100%);
 $gradient3: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
 $gradient4: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
 $gradient5: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%); 
-$gradient6: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%); 
+$gradient6: linear-gradient(-225deg, #1b9b98 0%, #817bcc 56%, #e07e8b 100%); 
 
 
 // mixin
@@ -180,7 +180,7 @@ $gradient6: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
         letter-spacing: 1vw;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
-        background-image: linear-gradient(to bottom, #580685, #f3b2c5);
+        background-image: linear-gradient(to bottom, #580685 20%, #f3b2c5);
     }
 }
 
