@@ -1,49 +1,45 @@
-@charset "UTF-8";
-/* NEXON Lv1 Gothic */
 @font-face {
-  font-family: 'NEXON Lv1 Gothic OTF';
+  font-family: 'NEXONLv1Gothic';
+  font-weight: 300;
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff") format("woff");
-  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'NEXON Lv1 Gothic OTF';
+  font-family: 'NEXONLv1Gothic';
+  font-weight: 400;
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff") format("woff");
-  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'NEXON Lv1 Gothic OTF';
+  font-family: 'NEXONLv1Gothic';
+  font-weight: 700;
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff") format("woff");
-  font-weight: 700;
   font-style: normal;
 }
 
-/* NEXON Lv2 Gothic */
 @font-face {
-  font-family: 'NEXON Lv2 Gothic';
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff") format("woff");
+  font-family: 'NEXONLv2Gothic';
   font-weight: 300;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff") format("woff");
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'NEXON Lv2 Gothic';
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff") format("woff");
+  font-family: 'NEXONLv2Gothic';
   font-weight: 400;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff") format("woff");
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'NEXON Lv2 Gothic';
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff") format("woff");
+  font-family: 'NEXONLv2Gothic';
   font-weight: 700;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff") format("woff");
   font-style: normal;
 }
 
-/* 여백 초기화 */
 body,
 div,
 dl,
@@ -77,38 +73,67 @@ figcaption {
   padding: 0;
 }
 
-/* 폰트 초기화 */
-body,
-button,
-input,
-select,
-table,
-textarea {
-  font-size: 14px;
-  line-height: 1.5;
-  color: #222;
-  font-family: var(--fontNexon1M), "Malgun Gothic", "맑은 고딕", dotum, "돋움", sans-serif;
+.bg {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-/* 링크 초기화 */
-a {
-  color: #222;
-  text-decoration: none;
+.bg::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
 }
 
-/* 목록 초기화 */
-ol,
-ul {
-  list-style: none;
+.bg0 {
+  background-image: url(../img/bg0@2.jpg);
 }
 
-/* 스타일 초기화 */
-strong {
-  font-weight: normal;
+.bg1 {
+  background-image: url(../img/bg1@2.jpg);
 }
 
-em {
-  font-style: normal;
+.bg2 {
+  background-image: url(../img/bg2@2.jpg);
+}
+
+.bg3 {
+  background-image: url(../img/bg3@2.jpg);
+}
+
+.bg4 {
+  background-image: url(../img/bg4@2.jpg);
+}
+
+.bg5 {
+  background-image: url(../img/bg5@2.jpg);
+}
+
+.bg6 {
+  background-image: url(../img/bg6@2.jpg);
+}
+
+.bg7 {
+  background-image: url(../img/bg7@2.jpg);
+}
+
+.bg8 {
+  background-image: url(../img/bg8@2.jpg);
+}
+
+.bg9 {
+  background-image: url(../img/bg9@2.jpg);
+}
+
+.bg10 {
+  background-image: url(../img/bg10@2.jpg);
 }
 
 #main {
@@ -121,28 +146,27 @@ em {
 }
 
 #main.game {
-  background: -webkit-gradient(linear, left bottom, left top, from(#166233), to(#fd9aba));
-  background: linear-gradient(to top, #166233 0%, #fd9aba 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#a8edea), to(#fed6e3));
+  background: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 }
 
 #main.menu {
-  background: -webkit-gradient(linear, left bottom, left top, from(#85b49e), to(#8b6082));
-  background: linear-gradient(to top, #85b49e 0%, #8b6082 100%);
-}
-
-#main.mouse {
-  background: -webkit-gradient(linear, left top, left bottom, from(#2af598), to(#009efd));
-  background: linear-gradient(180deg, #2af598 0%, #009efd 100%);
-}
-
-#main.parallax {
   background: -webkit-gradient(linear, left top, right top, from(#eea2a2), color-stop(19%, #bbc1bf), color-stop(42%, #57c6e1), color-stop(79%, #b49fda), to(#7ac5d8));
   background: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
 }
 
-#main.slider {
+#main.mouse {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fcc5e4), color-stop(15%, #fda34b), color-stop(35%, #ff7882), color-stop(52%, #c8699e), color-stop(71%, #7046aa), color-stop(87%, #0c1db8), to(#020f75));
+  background: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+}
+
+#main.parallax {
   background: -webkit-gradient(linear, left bottom, left top, from(#4fb576), color-stop(30%, #44c489), color-stop(46%, #28a9ae), color-stop(59%, #28a2b7), color-stop(71%, #4c7788), color-stop(86%, #6c4f63), to(#432c39));
   background: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);
+}
+
+#main.slider {
+  background: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
 }
 
 #contents h1 {
@@ -159,8 +183,8 @@ em {
   letter-spacing: 1vw;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #8200c9), to(#fdcbe8));
-  background-image: linear-gradient(to bottom, #8200c9 30%, #fdcbe8);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8200c9), to(#240038));
+  background-image: linear-gradient(to bottom, #8200c9, #240038);
 }
 
 #nav {
@@ -190,7 +214,7 @@ em {
   font-size: 14px;
   text-align: center;
   margin: 4px;
-  font-family: "NEXON Lv1 Gothic OTF";
+  font-family: "NEXONLv1Gothic";
   -webkit-box-shadow: inset 0 0 0 #fff;
           box-shadow: inset 0 0 0 #fff;
   -webkit-transition: all 0.4s;
@@ -201,4 +225,78 @@ em {
   -webkit-box-shadow: inset 0 -100px 0 #fff;
           box-shadow: inset 0 -100px 0 #fff;
   color: #6c4a70;
+}
+
+.info {
+  color: #fff;
+  font-family: "NEXONLv1Gothic";
+  padding: 20px;
+}
+
+.info.right {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.info.bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.info h1 {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.6;
+  border-bottom: 1px dashed #fff;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.info p {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.info li {
+  list-style: none;
+  display: inline;
+}
+
+.info li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.info li.active a {
+  background-color: #fff;
+  color: #000;
+}
+
+.info button {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 5px 20px;
+  color: #fff;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 0 #fff inset;
+          box-shadow: 0 0 0 #fff inset;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.info button:hover {
+  -webkit-box-shadow: 0 -50px 0 #fff inset;
+          box-shadow: 0 -50px 0 #fff inset;
+  color: #000;
 }
