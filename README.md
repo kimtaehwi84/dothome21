@@ -1,7 +1,7 @@
 
 #스마트앱 2021
 
-##메인 <a href="https://kimtaehwi84.github.io.dothome21/">바로가기<a>
+##메인 <a href="https://kimtaehwi84.github.io/dothome21/">바로가기<a>
 
 ###자바스크립트 <a href="https://kimtaehwi84.github.io.dothome21/javascript/javascript100.html">바로가기<a>
 
