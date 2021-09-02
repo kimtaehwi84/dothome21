@@ -625,12 +625,40 @@ a {
     -webkit-box-align: unset;
         -ms-flex-align: unset;
             align-items: unset;
-    bottom: 0;
+    bottom: 10px;
     width: 100%;
   }
   #nav li a {
-    width: 80px;
-    height: 35px;
+    font-size: 12px;
+    width: 60px;
+    height: 32px;
     line-height: 35px;
+  }
+  .info h1 {
+    font-size: 14px;
+  }
+  .info p {
+    font-size: 12px;
+  }
+  .info li a {
+    font-size: 10px;
+    width: 18px;
+    height: 18px;
+  }
+  .info.bottom {
+    bottom: 10px;
+  }
+  .code-view {
+    width: 90vw;
+    overflow: hidden;
+  }
+  .code-view .view-cont {
+    font-size: 12px;
+  }
+  .code-view .view-title {
+    font-size: 14px;
+  }
+  #modal .modal-bg .modal-cont button {
+    padding: 5px 20px;
   }
 }
