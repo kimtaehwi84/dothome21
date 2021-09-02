@@ -79,6 +79,12 @@ figcaption {
     padding: 0
 }
 
+/* 링크 초기화 */
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
 // variable
 $font-Six: 'Six Caps';
 $font-Nexon1: 'NEXONLv1Gothic';

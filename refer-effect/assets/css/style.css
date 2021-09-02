@@ -75,6 +75,12 @@ figcaption {
   padding: 0;
 }
 
+/* 링크 초기화 */
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
 .bg {
   position: relative;
   height: 100vh;
