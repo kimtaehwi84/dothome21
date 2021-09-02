@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,33 +9,33 @@
 
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/highlight.css">
-
     <style>
         #tab-menu {
             max-width: 600px;
-            background: rgb(173, 173, 173);
+            background: rgb(128, 128, 128);
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
             border-radius: 5px;
             overflow: hidden;
-            font-family: 'NEXONLv2Gothic';
+            font-family: 'NEXONLv1Gothic';
             color: #fff;
         }
+        .tab-btn {}
         .tab-btn ul {
             display: flex;
         }
         .tab-btn li {
             width: 20%;
-            list-style: none;
             text-align: center;
+            list-style: none;
         }
         .tab-btn li a {
+            display: block;
             color: #fff;
             text-decoration: none;
-            padding: 18px 15px 15px 15px;
-            display: block;
+            padding: 15px;
         }
         .tab-btn li.active a {
             border-bottom: 3px solid #000;
@@ -44,35 +44,36 @@
         .tab-cont {
             background: #fff;
             padding: 20px;
-            color: #222;
+            color: #000;
         }
         .tab-cont > div {
             display: none;
-        } 
+        }
         .tab-cont > div:first-child {
             display: block;
         }
         .tab-cont > div h2 {
-            margin-bottom: 10px;
+        margin-bottom: 10px;
         }
         .tab-cont > div p {
             line-height: 1.6;
         }
     </style>
 </head>
-<body class="bg bg1">
 
+<body class="bg bg6">
     <!-- contents -->
     <main>
         <div id="tab-menu">
             <div class="tab-btn">
                 <ul>
-                    <li class="active"><a herf="#">동주1</a></li>
-                    <li><a herf="#">동주2</a></li>
-                    <li><a herf="#">동주3</a></li>
-                    <li><a herf="#">동주4</a></li>
-                    <li><a herf="#">동주5</a></li>
+                    <li><a herf="#">동주1</a></li>
+                    <li><a herf="javascriptME02.htm">동주2</a></li>
+                    <li><a herf="javascriptME03.htm">동주3</a></li>
+                    <li><a herf="javascriptME04.htm">동주4</a></li>
+                    <li><a herf="javascriptME05.htm">동주5</a></li>
                 </ul>
+
             </div>
             <div class="tab-cont">
                 <div>
@@ -110,9 +111,11 @@
     <!-- //contents end -->
 
 
+
+
     <!-- info -->
     <div class="info">
-        <h1><a href="index.html">javascript Menu Effect01</a></h1>
+        <h1>jquery Menu Effect01</h1>
         <p>메뉴 이펙트 - 탭 메뉴</p>
     </div>
 
@@ -132,11 +135,11 @@
             <li><a href="jqueryME05.html">5</a></li>
         </ul>
     </div>
-
     <div class="info bottom">
-        <button>소스 보기</button>
+        <button>소스보기</button>
     </div>
-    <!-- //info -->
+    <!-- //info end -->
+
 
     <!-- modal -->
     <div id="modal">
@@ -152,14 +155,14 @@
                     </div>
                     <div class="view-title">
                         <ul>
-                            <li class="active"><a href="#">Html</a></li>
+                            <li class="active"><a href="#">html</a></li>
                             <li><a href="#">CSS</a></li>
-                            <li><a href="#">Javascript</a></li>
+                            <li><a href="#">jQuery</a></li>
                         </ul>
                     </div>
                     <div class="view-cont">
-                        <div>
-<pre><code class="language-html">&lt;div id="tab-menu"&gt;
+                        <div class="html">
+<pre><code class="language-html">
     &lt;main&gt;
         &lt;div id="tab-menu"&gt;
             &lt;div class="tab-btn"&gt;
@@ -204,128 +207,115 @@
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/main&gt;
+
 </code></pre>
                         </div>
-                        <div>
-<pre><code class="language-css">#tab-menu {
-    max-width: 600px;
-    background: rgb(173, 173, 173);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 5px;
-    overflow: hidden;
-    font-family: 'NEXONLv2Gothic';
-    color: #fff;
-}
-.tab-btn ul {
-    display: flex;
-}
-.tab-btn li {
-    width: 20%;
-    list-style: none;
-    text-align: center;
-}
-.tab-btn li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 18px 15px 15px 15px;
-    display: block;
-}
-.tab-btn li.active a {
-    border-bottom: 3px solid #000;
-    color: #000;
-}
-.tab-cont {
-    background: #fff;
-    padding: 20px;
-    color: #222;
-}
-.tab-cont > div {
-    display: none;
-} 
-.tab-cont > div:first-child {
-    display: block;
-}
-.tab-cont > div h2 {
-    margin-bottom: 10px;
-}
-.tab-cont > div p {
-    line-height: 1.6;
-}
+                        <div class="css">
+<pre><code class="language-css">
+    #tab-menu {
+        max-width: 600px;
+        background: rgb(173, 173, 173);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 5px;
+        overflow: hidden;
+        font-family: 'NEXONLv2Gothic';
+        color: #fff;
+    }
+    .tab-btn ul {
+        display: flex;
+    }
+    .tab-btn li {
+        width: 20%;
+        list-style: none;
+        text-align: center;
+    }
+    .tab-btn li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 18px 15px 15px 15px;
+        display: block;
+    }
+    .tab-btn li.active a {
+        border-bottom: 3px solid #000;
+        color: #000;
+    }
+    .tab-cont {
+        background: #fff;
+        padding: 20px;
+        color: #222;
+    }
+    .tab-cont > div {
+        display: none;
+    } 
+    .tab-cont > div:first-child {
+        display: block;
+    }
+    .tab-cont > div h2 {
+        margin-bottom: 10px;
+    }
+    .tab-cont > div p {
+        line-height: 1.6;
+    }
 </code></pre>
+
                         </div>
-                        <div>
-<pre><code class="language-js">const tabBtn = document.querySelectorAll(".tab-btn ul li");
-const tabCont = document.querySelectorAll(".tab-cont > div");
+                        <div  class="javascript">
+<pre><code class="language-javascript">
+    const tabBtn = $(".tab-btn ul li"); //5개의 버튼을 변수에 할당
+    const tabCont = $(".tab-cont > div"); //5개의 컨텐츠 변수에 할당
 
-tabBtn.forEach((element, index) => {
-    element.addEventListener("click", function(){
-        
-        tabBtn.forEach( el => {
-            el.classList.remove("active");
-        });
-        element.classList.add("active");
+    tabBtn.click(function(){
+        let target = $(this);
+        tabBtn.removeClass("active");
+        target.addClass("active");
 
-        tabCont.forEach( el => {
-            el.style.display = "none";
-        })
-        tabCont[index].style.display = "block";
+        let index = target.index(); //번호
+        tabCont.css("display","none");
+        tabCont.eq(index).css("display","block");
+
     });
-})
+    
 </code></pre>
-                        </div>
+                    </div>
                     </div>
                 </div>
-                
-                <button>닫기</button>
+
+                <button>close</button>
             </div>
         </div>
     </div>
-    <!-- //modal -->
+    <!-- //modal end -->
 
-    <!-- script -->
+    <!-- # 스크립트 -->
+    <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/custom.js"></script>
     <script src="../assets/js/highlight.min.js"></script>
     <script>
-        const tabBtn = document.querySelectorAll(".tab-btn ul li");
-        const tabCont = document.querySelectorAll(".tab-cont > div");
+        const tabBtn = $(".tab-btn ul li"); //5개의 버튼을 변수에 할당
+        const tabCont = $(".tab-cont > div"); //5개의 컨텐츠 변수에 할당
 
-        tabBtn.forEach((element, index) => {
-            element.addEventListener("click", function(){
-                
-                tabBtn.forEach( el => {
-                    el.classList.remove("active");
-                });
-                element.classList.add("active");
+        //1. 버튼을 클릭하면 클릭한 버튼한테 active 추가
+        //2. 버튼을 클릭하면 클릭한 버튼은 active 제거
+        //3. 버튼 인덱스 설정
+        //4. 1번째 버튼은 1번째 컨텐츠 연결 (각각 짝이 맞는)
+        //5. 모든 컨텐츠를 안보이게 설정
+        //6. 클릭한 버튼의 해당 컨텐츠만 보이게 설정
 
-                tabCont.forEach( el => {
-                    el.style.display = "none";
-                })
-                tabCont[index].style.display = "block";
-            });
-        })
+        tabBtn.click(function(){
+            let target = $(this);
+            tabBtn.removeClass("active");
+            target.addClass("active");
+
+            let index = target.index(); //번호
+            tabCont.css("display","none");
+            tabCont.eq(index).css("display","block");
+
+        });
     </script>
 
-<script>
-    const tabBtn = document.querySelectorAll(".tab-btn ul li");
-    const tabCont = document.querySelectorAll(".tab-cont > div");
-
-    tabBtn.forEach((element, index) => {
-        element.addEventListener("click", function(){
-            
-            tabBtn.forEach( el => {
-                el.classList.remove("active");
-            });
-            element.classList.add("active");
-
-            tabCont.forEach( el => {
-                el.style.display = "none";
-            })
-            tabCont[index].style.display = "block";
-        });
-    })
-</script>
 </body>
+
 </html>
