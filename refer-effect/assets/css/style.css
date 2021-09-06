@@ -147,39 +147,39 @@ figcaption {
 }
 
 .bg1 {
-  background-image: url(../img/bg01@2.jpg);
+  background-image: url(../img/bg1@2.jpg);
 }
 
 .bg2 {
-  background-image: url(../img/bg02@2.jpg);
+  background-image: url(../img/bg2@2.jpg);
 }
 
 .bg3 {
-  background-image: url(../img/bg03@2.jpg);
+  background-image: url(../img/bg3@2.jpg);
 }
 
 .bg4 {
-  background-image: url(../img/bg04@2.jpg);
+  background-image: url(../img/bg4@2.jpg);
 }
 
 .bg5 {
-  background-image: url(../img/bg05@2.jpg);
+  background-image: url(../img/bg5@2.jpg);
 }
 
 .bg6 {
-  background-image: url(../img/bg06@2.jpg);
+  background-image: url(../img/bg6@2.jpg);
 }
 
 .bg7 {
-  background-image: url(../img/bg07@2.jpg);
+  background-image: url(../img/bg7@2.jpg);
 }
 
 .bg8 {
-  background-image: url(../img/bg08@2.jpg);
+  background-image: url(../img/bg8@2.jpg);
 }
 
 .bg9 {
-  background-image: url(../img/bg09@2.jpg);
+  background-image: url(../img/bg9@2.jpg);
 }
 
 .bg10 {
@@ -197,32 +197,25 @@ figcaption {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 #main.game {
-  background: linear-gradient(to bottom, #84fab0 0%, #8fd3f4 100%);
-}
-#main.game #contents h1 {
-  background-image: linear-gradient(to top, #30cfd0, #330867);
+  background: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
 }
 #main.menu {
-  background: linear-gradient(to bottom, #30cfd0 0%, #330867 100%);
-}
-#main.menu #contents h1 {
-  background-image: linear-gradient(to top, #30cfd0 1%, #330867);
+  background: linear-gradient(-225deg, #39caa8 0%, #9f6db6 48%, #4130bb 100%);
 }
 #main.mouse {
-  background: linear-gradient(to bottom, #8ec5fc 0%, #e0c3fc 100%);
+  background: linear-gradient(to top, #d5dee7 0%, #ff657f 0%, #3ca529 100%);
 }
 #main.parallax {
-  background: linear-gradient(to bottom, #d1fdff 0%, #fddb92 100%);
+  background: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);
 }
-#main.parallax #contents h1 {
-  background-image: linear-gradient(to bottom, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
 }
+
+  
 #main.slider {
-  background: linear-gradient(to bottom, #f6d365 0%, #fda085 100%);
+  background: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
 }
-#main.slider #contents h1 {
-  background-image: linear-gradient(to bottom, #cc4f74 0%, #ffdc14 100%);
-}
+
+
 
 /* #contents */
 #contents h1 {
