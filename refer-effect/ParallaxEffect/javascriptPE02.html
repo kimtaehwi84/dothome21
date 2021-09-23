@@ -14,57 +14,16 @@
   <link rel="stylesheet" href="../assets/css/highlight.css">
 
   <style>
-    .paraDot {
-        position: fixed;
-        right: 20px;
-        top: 50%;
-        z-index: 1000;
-        transform: translateY(-50%);
-        background: rgba(0,0,0,0.4);
-        padding: 20px 10px;
-        border-radius: 30px;
-    }
-    .paraDot li {
-        list-style: none;
-    }
-    .paraDot li a {
-        width: 20px; 
-        height: 20px;
-        display: block;
-        border: 2px solid #fff;
-        border-radius: 50%;
-        margin: 8px;
-        position: relative;
-        text-decoration: none;
-    }
-    
-    .paraDot li a span {
-        position: absolute;
-        left: -105px;
-        top: 50%;
-        transform: translateY(-50%);
-        background: #fff;
-        color: #000;
-        display: block;
-        padding: 2px 15px;
-        border-radius: 30px;
-        opacity: 0;
-    }
-    .paraDot li.active a {
-        background: #fff;
-    }
-    .paraDot li.active a span {
-        opacity: 1;
-    }
-</style>
+
+  </style>
 </head>
 
 <body class="parallax">
 
   <!-- header -->
   <header class="paraInfo">
-    <h1><a href="index.html">Parallax Effect02 - javascript</a></h1>
-    <p>패랠랙스 스크로링 효과 - 닷 메뉴</p>
+    <h1><a href="index.html">Parallax Effect01 - jQuery</a></h1>
+    <p>패랠랙스 스크로링 효과 - 메뉴 이동</p>
   </header>
   <!-- //header -->
 
@@ -72,19 +31,33 @@
   <!-- main -->
   <main>
     <div class="paraScroll">scrollTop() : <span>0</span></div>
+    <div class="paraInfo2">
+      <ul>
+        <li>section1 offset(): <span class="offset1">0</span></li>
+        <li>section2 offset(): <span class="offset2">0</span></li>
+        <li>section3 offset(): <span class="offset3">0</span></li>
+        <li>section4 offset(): <span class="offset4">0</span></li>
+        <li>section5 offset(): <span class="offset5">0</span></li>
+        <li>section6 offset(): <span class="offset6">0</span></li>
+        <li>section7 offset(): <span class="offset7">0</span></li>
+        <li>section8 offset(): <span class="offset8">0</span></li>
+        <li>section9 offset(): <span class="offset9">0</span></li>
+      </ul>
+
+    </div>
 
     <!--//scroll-->
-    <div class="paraDot">
+    <div class="paraNav">
       <ul>
-        <li class="active"><a href="#section1">section1</a></li>
-        <li><a href="#section2"><span>section2</span></a></li>
-        <li><a href="#section3"><span>section3</span></a></li>
-        <li><a href="#section4"><span>section4</span></a></li>
-        <li><a href="#section5"><span>section5</span></a></li>
-        <li><a href="#section6"><span>section6</span></a></li>
-        <li><a href="#section7"><span>section7</span></a></li>
-        <li><a href="#section8"><span>section8</span></a></li>
-        <li><a href="#section9"><span>section9</span></a></li>
+        <li class="active"><a href="#section1">s1</a></li>
+        <li><a href="#section2">s2</a></li>
+        <li><a href="#section3">s3</a></li>
+        <li><a href="#section4">s4</a></li>
+        <li><a href="#section5">s5</a></li>
+        <li><a href="#section6">s6</a></li>
+        <li><a href="#section7">s7</a></li>
+        <li><a href="#section8">s8</a></li>
+        <li><a href="#section9">s9</a></li>
       </ul>
     </div>
     <!-- //nav -->
@@ -97,8 +70,7 @@
         <figure class="img-Wrap">
           <div class="img"></div>
         </figure>
-        <p class="desc">성공이 나를 버려놓은 것이 아니다. 나는 원래가 거슬리는 사람이다.
-            Fran Lebowitz</p>
+        <p class="desc">Don't dwell on the past</p>
       </section>
       <!-- section1 -->
 
@@ -108,8 +80,7 @@
         <figure class="img-Wrap">
           <div class="img"></div>
         </figure>
-        <p class="desc">연은 순풍이 아니라 역풍에 가장 높이 난다.
-            Sir Winston Churchill</p>
+        <p class="desc">Pain past is pleasure</p>
       </section>
       <!-- section2 -->
 
@@ -119,8 +90,7 @@
         <figure class="img-Wrap">
           <div class="img"></div>
         </figure>
-        <p class="desc">성공은 자연연소의 결과가 아니다. 먼저 자기 자신에게 불을 지펴야 한다.
-            Reggie Leach</p>
+        <p class="desc">Don't give up easily even if you failed</p>
       </section>
       <!-- section3 -->
 
@@ -130,8 +100,7 @@
         <figure class="img-Wrap">
           <div class="img"></div>
         </figure>
-        <p class="desc">언제나 현재에 집중할 수 있다면 행복할 것이다.
-            Paulo Cuelho</p>
+        <p class="desc">Love what you do</p>
       </section>
       <!-- section4 -->
 
@@ -141,8 +110,7 @@
         <figure class="img-Wrap">
           <div class="img"></div>
         </figure>
-        <p class="desc">위대한 이들은 목적을 갖고, 그 외의 사람들은 소원을 갖는다.
-            Washington Irving</p>
+        <p class="desc">This too shall pass away</p>
       </section>
       <!-- section5 -->
 
@@ -152,8 +120,7 @@
         <figure class="img-Wrap">
           <div class="img"></div>
         </figure>
-        <p class="desc">상대의 급소를 공략하면 마음도 사로잡을 수 있다.
-            John Wayne</p>
+        <p class="desc">If not now, then when?</p>
       </section>
       <!-- section6 -->
 
@@ -163,8 +130,7 @@
         <figure class="img-Wrap">
           <div class="img"></div>
         </figure>
-        <p class="desc">미래가 어떻게 전개될지는 모르지만, 누가 그 미래를 결정하는지는 압니다.
-            Oprah Winfrey</p>
+        <p class="desc">Don't dwell on the past</p>
       </section>
       <!-- section7 -->
 
@@ -174,8 +140,7 @@
         <figure class="img-Wrap">
           <div class="img"></div>
         </figure>
-        <p class="desc">멈추지 말고 한 가지 목표에 매진하라. 그것이 성공의 비결이다.
-            Anna Pavlova</p>
+        <p class="desc">Don't dwell on the past</p>
       </section>
       <!-- section8 -->
 
@@ -185,8 +150,7 @@
         <figure class="img-Wrap">
           <div class="img"></div>
         </figure>
-        <p class="desc">성공의 커다란 비결은 결코 지치지 않는 인간으로 인생을 살아나가는 것이다.
-            Albert Schweitzer</p>
+        <p class="desc">Don't dwell on the past</p>
       </section>
       <!-- section9 -->
 
@@ -198,7 +162,27 @@
 
   <!-- footer -->
   <footer class="paraFooter">
-
+    <h1>Parallax <em>Srolling</em></h1>
+    <div class="footerInfo">
+      <h2>자바스크립트</h2>
+      <ul>
+        <li><a href="javascriptPE01.html">1</a></li>
+        <li><a href="javascriptPE02.html">2</a></li>
+        <li><a href="javascriptPE03.html">3</a></li>
+        <li><a href="javascriptPE04.html">4</a></li>
+        <li><a href="javascriptPE05.html">5</a></li>
+      </ul>
+    </div>
+    <div class="footerInfo">
+      <h2>제이쿼리</h2>
+      <ul>
+        <li class="active"><a href="jqueryPE01.html">1</a></li>
+        <li><a href="jqueryPE02.html">2</a></li>
+        <li><a href="jqueryPE03.html">3</a></li>
+        <li><a href="jqueryPE04.html">4</a></li>
+        <li><a href="jqueryPE05.html">5</a></li>
+      </ul>
+    </div>
   </footer>
   <!-- //footer -->
 
@@ -224,7 +208,7 @@
           <div class="view-title">
             <ul>
               <li class="active"><a href="#">HTML</a></li>
-              <li><a href="#">SCSS</a></li>
+              <li><a href="#">CSS</a></li>
               <li><a href="#">Javascript</a></li>
             </ul>
           </div>
@@ -252,7 +236,7 @@
         &lt;h1&gt;&lt;a href="index.html"&gt;Parallax Effect01 - javascript&lt;/a&gt;&lt;/h1&gt;
         &lt;p&gt;패랠랙스 스크로링 효과 - 메뉴 이동&lt;/p&gt;
     &lt;/header&gt;
-    &lt;!-- //header end --&gt;
+    &lt;!-- //header --&gt;
 
 
     &lt;!-- main --&gt;
@@ -271,8 +255,8 @@
                 &lt;li&gt;section9 offset(): &lt;span class="offset9"&gt;0&lt;/span&gt;&lt;/li&gt;
             &lt;/ul&gt;
         &lt;/div&gt;
-        &lt;!--//scroll end--&gt;
 
+        &lt;!--//scroll--&gt;
         &lt;div class="paraNav"&gt;
             &lt;ul&gt;
                 &lt;li class="active"&gt;&lt;a href="#section1"&gt;s1&lt;/a&gt;&lt;/li&gt;
@@ -286,7 +270,7 @@
                 &lt;li&gt;&lt;a href="#section9"&gt;s9&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
         &lt;/div&gt;
-        &lt;!-- //nav end --&gt;
+        &lt;!-- //nav --&gt;
 
         &lt;div class="paraCont"&gt;
             &lt;section id="section1" class="content-item"&gt;
@@ -295,7 +279,7 @@
                 &lt;figure class="img-Wrap"&gt;
                     &lt;div class="img"&gt;&lt;/div&gt;
                 &lt;/figure&gt;
-                &lt;p class="desc"&gt;성공이 나를 버려놓은 것이 아니다. 나는 원래가 거슬리는 사람이다. Fran Lebowitz&lt;/p&gt;
+                &lt;p class="desc"&gt;Don't dwell on the past&lt;/p&gt;
             &lt;/section&gt;
             &lt;!-- section1 --&gt;
 
@@ -305,7 +289,7 @@
                 &lt;figure class="img-Wrap"&gt;
                     &lt;div class="img"&gt;&lt;/div&gt;
                 &lt;/figure&gt;
-                &lt;p class="desc"&gt;연은 순풍이 아니라 역풍에 가장 높이 난다. Sir Winston Churchill&lt;/p&gt;
+                &lt;p class="desc"&gt;Pain past is pleasure&lt;/p&gt;
             &lt;/section&gt;
             &lt;!-- section2 --&gt;
 
@@ -315,7 +299,7 @@
                 &lt;figure class="img-Wrap"&gt;
                     &lt;div class="img"&gt;&lt;/div&gt;
                 &lt;/figure&gt;
-                &lt;p class="desc"&gt;성공은 자연연소의 결과가 아니다. 먼저 자기 자신에게 불을 지펴야 한다. Reggie Leach&lt;/p&gt;
+                &lt;p class="desc"&gt;Don't give up easily even if you failed&lt;/p&gt;
             &lt;/section&gt;
             &lt;!-- section3 --&gt;
 
@@ -325,7 +309,7 @@
                 &lt;figure class="img-Wrap"&gt;
                     &lt;div class="img"&gt;&lt;/div&gt;
                 &lt;/figure&gt;
-                &lt;p class="desc"&gt;언제나 현재에 집중할 수 있다면 행복할 것이다. Paulo Cuelho&lt;/p&gt;
+                &lt;p class="desc"&gt;Love what you do&lt;/p&gt;
             &lt;/section&gt;
             &lt;!-- section4 --&gt;
 
@@ -335,7 +319,7 @@
                 &lt;figure class="img-Wrap"&gt;
                     &lt;div class="img"&gt;&lt;/div&gt;
                 &lt;/figure&gt;
-                &lt;p class="desc"&gt;위대한 이들은 목적을 갖고, 그 외의 사람들은 소원을 갖는다. Washington Irving&lt;/p&gt;
+                &lt;p class="desc"&gt;This too shall pass away&lt;/p&gt;
             &lt;/section&gt;
             &lt;!-- section5 --&gt;
 
@@ -345,7 +329,7 @@
                 &lt;figure class="img-Wrap"&gt;
                     &lt;div class="img"&gt;&lt;/div&gt;
                 &lt;/figure&gt;
-                &lt;p class="desc"&gt;상대의 급소를 공략하면 마음도 사로잡을 수 있다. John Wayne&lt;/p&gt;
+                &lt;p class="desc"&gt;If not now, then when?&lt;/p&gt;
             &lt;/section&gt;
             &lt;!-- section6 --&gt;
 
@@ -355,7 +339,7 @@
                 &lt;figure class="img-Wrap"&gt;
                     &lt;div class="img"&gt;&lt;/div&gt;
                 &lt;/figure&gt;
-                &lt;p class="desc"&gt;미래가 어떻게 전개될지는 모르지만, 누가 그 미래를 결정하는지는 압니다. Oprah Winfrey&lt;/p&gt;
+                &lt;p class="desc"&gt;Don't dwell on the past&lt;/p&gt;
             &lt;/section&gt;
             &lt;!-- section7 --&gt;
 
@@ -365,7 +349,7 @@
                 &lt;figure class="img-Wrap"&gt;
                     &lt;div class="img"&gt;&lt;/div&gt;
                 &lt;/figure&gt;
-                &lt;p class="desc"&gt;멈추지 말고 한 가지 목표에 매진하라. 그것이 성공의 비결이다. Anna Pavlova&lt;/p&gt;
+                &lt;p class="desc"&gt;Don't dwell on the past&lt;/p&gt;
             &lt;/section&gt;
             &lt;!-- section8 --&gt;
 
@@ -375,24 +359,24 @@
                 &lt;figure class="img-Wrap"&gt;
                     &lt;div class="img"&gt;&lt;/div&gt;
                 &lt;/figure&gt;
-                &lt;p class="desc"&gt;성공의 커다란 비결은 결코 지치지 않는 인간으로 인생을 살아나가는 것이다. Albert Schweitzer&lt;/p&gt;
+                &lt;p class="desc"&gt;Don't dwell on the past&lt;/p&gt;
             &lt;/section&gt;
             &lt;!-- section9 --&gt;
         &lt;/div&gt;
-        &lt;!-- //contents end --&gt;
+        &lt;!-- //contents --&gt;
     &lt;/main&gt;
-    &lt;!-- //main end --&gt;
+    &lt;!-- //main --&gt;
 
     &lt;!-- footer --&gt;
     &lt;footer class="paraFooter"&gt;
     &lt;/footer&gt;
-    &lt;!-- //footer end --&gt;
+    &lt;!-- //footer --&gt;
 
     &lt;!-- source --&gt;
     &lt;div class="source"&gt;
         &lt;button onclick="modal()"&gt;소스보기&lt;/button&gt;
     &lt;/div&gt;
-    &lt;!-- //source end --&gt;
+    &lt;!-- //source --&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -401,7 +385,7 @@
               <pre><code class="language-css">.parallax {
     background: #222;
     color: #fff;
-    font-family: "NEXONLv2Gothic";
+    font-family: "S-CoreDream";
     position: relative;
 }
 .parallax .source {
@@ -549,7 +533,7 @@
     filter: saturate(100%);
 }
 .paraCont .content-item .desc {
-    font-size: 4vw;
+    font-size: 6vw;
     line-height: 1.4;
     margin-top: -6vw;
     margin-right: -3vw;
@@ -571,39 +555,39 @@
 }
 
 .content-item:nth-child(1) .img {
-    background: url(../img/bg1.jpg);
+    background: url(../img/bg01.jpg);
 }
 
 .content-item:nth-child(2) .img {
-    background: url(../img/bg2.jpg);
+    background: url(../img/bg02.jpg);
 }
 
 .content-item:nth-child(3) .img {
-    background: url(../img/bg3.jpg);
+    background: url(../img/bg03.jpg);
 }
 
 .content-item:nth-child(4) .img {
-    background: url(../img/bg4.jpg);
+    background: url(../img/bg04.jpg);
 }
 
 .content-item:nth-child(5) .img {
-    background: url(../img/bg5.jpg);
+    background: url(../img/bg05.jpg);
 }
 
 .content-item:nth-child(6) .img {
-    background: url(../img/bg6.jpg);
+    background: url(../img/bg06.jpg);
 }
 
 .content-item:nth-child(7) .img {
-    background: url(../img/bg7.jpg);
+    background: url(../img/bg07.jpg);
 }
 
 .content-item:nth-child(8) .img {
-    background: url(../img/bg8.jpg);
+    background: url(../img/bg08.jpg);
 }
 
 .content-item:nth-child(9) .img {
-    background: url(../img/bg9.jpg);
+    background: url(../img/bg09.jpg);
 }
 
 .content-item:nth-child(10) .img {
@@ -634,7 +618,7 @@ $(window).scroll(function () {
     //info
     $('.paraScroll span').text(parseInt(scrollTop));
 
-    for (let i = 1; i <= $('.content-item').length; i++) {
+    for (let i = 1; i &lt;= $('.content-item').length; i++) {
         $('.offset' + i).text(parseInt($('#section' + i).offset().top) + 'px');
     }
 });
@@ -642,7 +626,7 @@ $(window).scroll(function () {
             </div>
           </div>
         </div>
-        <button>CLOSE</button>
+        <button>닫기</button>
       </div>
     </div>
   </div>
@@ -650,32 +634,37 @@ $(window).scroll(function () {
 
 
   <!-- script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="../assets/js/custom.js"></script>
   <script src="../assets/js/highlight.min.js"></script>
   <script>
-      document.querySelectorAll(".paraDot ul li a").forEach((element) => {
-          element.addEventListener("click",(e) => {
-              e.preventDefault();
-              document.querySelector(element.getAttribute("href")).scrollIntoView({
-                  behavior: "smooth"
-              });
-          });
+    $('.paraNav ul li').click(function (e) {
+      e.preventDefault();
+      let target = $(this);
+      let index = target.index();
+      let section = $('.paraCont > section').eq(index);
+      let offset = section.offset().top;
+
+      $('html, body').animate({ scrollTop: offset }, 600);
+    });
+
+    $(window).scroll(function () {
+      let scrollTop = $(window).scrollTop();
+
+      $('.content-item').each(function (i) {
+        if (scrollTop >= $(this).offset().top - 2) {
+          $('.paraNav ul li').eq(i).addClass('active').siblings().removeClass('active');
+        }
       });
 
-      window.addEventListener("scroll", () => {
-          let scrollTop = document.documentElement.scrollTop || window.scrollY || window.pageYOffset;
+      //info
+      $('.paraScroll span').text(parseInt(scrollTop));
 
-          document.querySelector(".paraScroll span").innerText = parseInt(scrollTop) + "px";
-
-          if( scrollTop > document.getElementById("section1").offsetTop) {
-              document.querySelectorAll(".paraDot ul li").forEach( (el) => {
-                  el.classList.remove("active")
-              })
-              document.querySelector(".paraDot li:nth-child(1)").classList.add("active");
-                  
-          }
-      })
-
+      for (let i = 1; i <= $('.content-item').length; i++) {
+        $('.offset' + i).text(parseInt($('#section' + i).offset().top) + 'px');
+      }
+    });
   </script>
 </body>
 
