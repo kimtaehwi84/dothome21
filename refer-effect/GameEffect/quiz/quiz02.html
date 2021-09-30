@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -45,7 +46,6 @@
                 linear-gradient(#cdcccc, #cdcccc);
             background-size: 100px 100%, 100% 100px, 100% 10px, 10px 100%, 100% 100px, 100px 100%, 100px 100%, 100px 100px, 100px 100px;
             padding: 100px 0;
-
         }
 
         header {
@@ -53,19 +53,19 @@
             left: 0;
             top: 0;
             width: 100%;
-            background-color: #262626;
+            background: #262626;
             color: #fff;
             display: flex;
-            padding: 10px;
             align-items: center;
-            z-index: 9999;
-
+            padding: 10px;
+            z-index: 10;
         }
 
         header::before {
             content: '';
             width: calc(100% - 10px);
             height: calc(100% - 10px);
+            box-shadow: inset 0px 0px 0px 2px #757575;
             border: 4px ridge #a3a3a3;
             position: absolute;
             left: 5px;
@@ -82,23 +82,30 @@
         }
 
         nav li {
-            margin-right: 20px;
+            margin-right: 30px;
         }
 
         nav li a {
-            color: rgba(171, 171, 171, 1);
+            color: rgb(171, 171, 171);
         }
 
         nav li a:hover {
-            border-bottom: 1px solid rgba(171, 171, 171, 1);
+            border-bottom: 1px solid rgb(171, 171, 171);
         }
 
         nav li.active a {
             color: #fff;
         }
 
-        nav li.active a:hover {
+        nav li.active:hover a {
             border-bottom: 1px solid #fff;
+        }
+
+        .ir {
+            background: url(dot.jpg);
+            display: block;
+            width: 10px;
+            height: 10px;
         }
 
         .ham {
@@ -134,7 +141,7 @@
         .ham span::after {
             content: '';
             width: 20px;
-            height: 2px;
+            height: 3px;
             background: #fff;
             position: absolute;
             left: 0;
@@ -145,7 +152,7 @@
             max-width: 500px;
             width: 100%;
             background: #fff;
-            margin: 30px auto;
+            margin: 100px auto;
             border: 8px ridge #cacaca;
         }
 
@@ -181,90 +188,79 @@
             background-size: cover;
         }
 
-        .question__quiz {
+        .quizWrap .question_quiz {
             border: 4px ridge #cacaca;
         }
 
-        .question__title {
-            padding: 20px;
+        .quizWrap .question_quiz .question_title {
             border-bottom: 6px ridge #cacaca;
-        }
-
-        .question__title__num {
-            color: #A5E151;
-            font-size: 34px;
-            text-shadow: 1px 1px 1px #000;
-        }
-
-        .question__title__ask {
+            padding: 13px 30px 20px;
             font-size: 24px;
             line-height: 1.4;
         }
 
-        .question__answer {
+        .quizWrap .question_quiz .question_title .question_title_num {
+            color: #A5E151;
+            font-size: 34px;
+            text-shadow: 1px 1px 1px #000;
+        }
+        .quizWrap .question_quiz .question_title .question_title_ask {
+            font-size: 24px;
+            line-height: 1.4;
+        }
+        .quizWrap .question_quiz .question_answer {
             background: #E8E7E8;
             padding: 20px;
         }
 
-        .question__answer__confirm {
+        .quizWrap .question_quiz .question_answer .question_answer_confirm {
             background: #cacaca;
             text-align: center;
             padding: 13px 20px;
             border: 6px groove #fff;
-            font-size: 22px;
+            font-size: 24px;
             text-shadow: 1px 1px 1px #fff;
             width: 100%;
             font-family: 'DungGeunMo';
         }
 
-        .question__answer__confirm:active {
+        .quizWrap .question_quiz .question_answer .question_answer_confirm:active {
             background: #a3a3a3;
         }
-
-        .question__answer__view {
+        .quizWrap .question_quiz .question_answer .question_answer_view {
             text-align: center;
             border: 6px groove #fff;
             padding: 13px 20px;
-            font-size: 22px;
+            font-size: 24px;
             text-shadow: 1px 1px 1px #fff;
         }
-
-        @media (max-width: 1200px) {
-            .ham {
-                display: block;
-            }
-
+        @media (max-width: 1200px){
+            .ham {display: block;}
             nav {
                 position: absolute;
-                top: 60px;
-                left: 0;
-                background-color: #262626;
+                top: 60px; left: 0;
+                background: #262626;
                 width: 100%;
                 display: none;
             }
-
             nav.show {
                 display: block;
             }
-
             nav ul {
                 display: block;
                 position: relative;
                 padding: 20px;
                 z-index: 1;
             }
-
             nav ul::before {
                 content: '';
                 width: calc(100% - 10px);
                 height: calc(100% - 10px);
                 border: 4px ridge #a3a3a3;
                 position: absolute;
-                left: 5px;
-                top: 5px;
+                left: 5px; top: 5px;
                 z-index: -1;
             }
-
             nav li {
                 padding: 5px;
             }
@@ -565,10 +561,12 @@
             transform: rotate(37.5deg);
         }
 
+        .card.good .nose,
         .card.good .nose {
             top: 18%;
         }
 
+        .card.good .mouth,
         .card.good .mouth {
             top: 16.5%;
         }
@@ -582,10 +580,12 @@
             animation: movetongue 0.1s linear 0.35s infinite alternate forwards;
         }
 
+        .card.good .chin,
         .card.good .chin {
             top: 34%;
         }
 
+        .card.good .tail,
         .card.good .tail {
             animation: movetail 0.1s linear infinite alternate forwards;
         }
@@ -669,15 +669,14 @@
 </head>
 
 <body>
-
     <header>
         <h1>Quiz</h1>
         <nav>
             <ul>
-                <li class="active"><a href="quiz01.html">주관식 한 문제</a></li>
-                <li><a href="quiz02.html">주관식 여러 문제</a></li>
+                <li><a href="quiz01.html">주관식 한 문제</a></li>
+                <li class="active"><a href="quiz02.html">주관식 여러 문제</a></li>
                 <li><a href="quiz03.html">객관식 한 문제</a></li>
-                <li><a href="quiz04.html">객관식 여러 문제</a></li>
+                <li><a href="quiz04.html">객관식 여러 문재</a></li>
                 <li><a href="quiz05.html">객관식 여러 문제 : 이미지 슬라이드</a></li>
             </ul>
         </nav>
@@ -686,212 +685,170 @@
         </div>
     </header>
 
-    <!-- 퀴즈 01 -->
     <div class="quizWrap">
-        <h2>넌센스 퀴즈</h2>
-        <div class="question__quiz">
-            <h3 class="question__title">
-                <span class="question__title__num"></span>
-                <span class="question__title__ask"></span>
+        <h2>넨센스 퀴즈</h2>
+        <div class="question_quiz">
+            <h3 class="question_title">
+                <span class="question_title_num"></span>
+                <span class="question_title_ask"></span>
             </h3>
-            <div class="question_quiz__answer">
-                <div class="question__quiz__img">
-                    <div class="card">
-                        <div class="dog">
-                            <div class="head">
-                                <div class="ears"></div>
-                                <div class="face"></div>
-                                <div class="eyes">
-                                    <div class="teardrop"></div>
+            <div class="question_answer">
+                <div class="question_answer_img">
+                    <div class='card'>
+                        <div class='dog'>
+                            <div class='head'>
+                                <div class='ears'></div>
+                                <div class='face'></div>
+                                <div class='eyes'>
+                                    <div class='teardrop'></div>
                                 </div>
-                                <div class="nose"></div>
-                                <div class="mouth">
-                                    <div class="tongue"></div>
+                                <div class='nose'></div>
+                                <div class='mouth'>
+                                    <div class='tongue'></div>
                                 </div>
-                                <div class="chin"></div>
+                                <div class='chin'></div>
                             </div>
-                            <div class="body">
-                                <div class="tail"></div>
-                                <div class="legs"></div>
+                            <div class='body'>
+                                <div class='tail'></div>
+                                <div class='legs'></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="question__answer__confirm">정답 확인하기</button>
-                <div class="question__answer__view"></div>
+                <button class="question_answer_confirm">정답 확인하기</button>
+                <div class="question_answer_view"></div>
             </div>
         </div>
     </div>
-
-    <!-- //end 퀴즈 01 -->
-
-
-    <!-- 퀴즈 02 -->
     <div class="quizWrap">
-        <h2>넌센스 퀴즈</h2>
-        <div class="question__quiz">
-            <h3 class="question__title">
-                <span class="question__title__num"></span>
-                <span class="question__title__ask"></span>
+        <h2>넨센스 퀴즈</h2>
+        <div class="question_quiz">
+            <h3 class="question_title">
+                <span class="question_title_num"></span>
+                <span class="question_title_ask"></span>
             </h3>
-            <div class="question_quiz__answer">
-                <div class="question__quiz__img">
-                    <div class="card">
-                        <div class="dog">
-                            <div class="head">
-                                <div class="ears"></div>
-                                <div class="face"></div>
-                                <div class="eyes">
-                                    <div class="teardrop"></div>
+            <div class="question_answer">
+                <div class="question_answer_img">
+                    <div class='card'>
+                        <div class='dog'>
+                            <div class='head'>
+                                <div class='ears'></div>
+                                <div class='face'></div>
+                                <div class='eyes'>
+                                    <div class='teardrop'></div>
                                 </div>
-                                <div class="nose"></div>
-                                <div class="mouth">
-                                    <div class="tongue"></div>
+                                <div class='nose'></div>
+                                <div class='mouth'>
+                                    <div class='tongue'></div>
                                 </div>
-                                <div class="chin"></div>
+                                <div class='chin'></div>
                             </div>
-                            <div class="body">
-                                <div class="tail"></div>
-                                <div class="legs"></div>
+                            <div class='body'>
+                                <div class='tail'></div>
+                                <div class='legs'></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="question__answer__confirm">정답 확인하기</button>
-                <div class="question__answer__view"></div>
+                <button class="question_answer_confirm">정답 확인하기</button>
+                <div class="question_answer_view"></div>
             </div>
         </div>
     </div>
-    <!-- //end 퀴즈 02 -->
-
-    <!-- 퀴즈 03 -->
     <div class="quizWrap">
-        <h2>넌센스 퀴즈</h2>
-        <div class="question__quiz">
-            <h3 class="question__title">
-                <span class="question__title__num"></span>
-                <span class="question__title__ask"></span>
+        <h2>넨센스 퀴즈</h2>
+        <div class="question_quiz">
+            <h3 class="question_title">
+                <span class="question_title_num"></span>
+                <span class="question_title_ask"></span>
             </h3>
-            <div class="question_quiz__answer">
-                <div class="question__quiz__img">
-                    <div class="card">
-                        <div class="dog">
-                            <div class="head">
-                                <div class="ears"></div>
-                                <div class="face"></div>
-                                <div class="eyes">
-                                    <div class="teardrop"></div>
+            <div class="question_answer">
+                <div class="question_answer_img">
+                    <div class='card'>
+                        <div class='dog'>
+                            <div class='head'>
+                                <div class='ears'></div>
+                                <div class='face'></div>
+                                <div class='eyes'>
+                                    <div class='teardrop'></div>
                                 </div>
-                                <div class="nose"></div>
-                                <div class="mouth">
-                                    <div class="tongue"></div>
+                                <div class='nose'></div>
+                                <div class='mouth'>
+                                    <div class='tongue'></div>
                                 </div>
-                                <div class="chin"></div>
+                                <div class='chin'></div>
                             </div>
-                            <div class="body">
-                                <div class="tail"></div>
-                                <div class="legs"></div>
+                            <div class='body'>
+                                <div class='tail'></div>
+                                <div class='legs'></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="question__answer__confirm">정답 확인하기</button>
-                <div class="question__answer__view"></div>
+                <button class="question_answer_confirm">정답 확인하기</button>
+                <div class="question_answer_view"></div>
             </div>
         </div>
     </div>
-    <!-- //end 퀴즈 03 -->
-
-    <script>
-        // 선택자
-        const quizWrap = document.querySelector(".quizWrap");
-        const questionQuiz = document.querySelector(".question__quiz");
-        const questionTitle = document.querySelector(".question__title");
-        const questionTitleNum = document.querySelectorAll(".question__title__num");
-        const questionTitleAsk = document.querySelectorAll(".question__title__ask");
-        const questionAnswer = document.querySelector(".question__answer");
-        const questionAnswerImg = document.querySelector(".question__answer__img");
-        const questionAnswerConfirm = document.querySelectorAll(".question__answer__confirm");
-        const questionAnswerView = document.querySelector(".question__answer__view");\
-
-        // document >>> quizWrap (문서대신 quizWrap안에서만 //단, querySelectorAll document)
-
-        const quizeInfo = [{
-                quizNum: 1,
-                quizAsk: "채소 장사꾼이 제일 싫어하는 외국의 도시는?",
-                quizAnswer: "시드니"
-            }, {
-                quizNum: 2,
-                quizAsk: "가장 비싼 새는?",
-                quizAnswer: "백조"
-            }, {
-                quizNum: 3,
-                quizAsk: "소녀가 가응로 여행가면?",
-                quizAnswer: "걸리버 여행"
-            }
-
-        ]
-
-        //문제 출력
-        // questionTitleNum[0].innerHTML = quizeInfo[0].quizNum;
-        // questionTitleNum[1].innerHTML = quizeInfo[1].quizNum;
-        // questionTitleNum[2].innerHTML = quizeInfo[2].quizNum;
-
-        // questionTitleAsk[0].innerHTML = quizeInfo[0].quizAsk;
-        // questionTitleAsk[1].innerHTML = quizeInfo[1].quizAsk;
-        // questionTitleAsk[2].innerHTML = quizeInfo[2].quizAsk;
-
-        // questionAnswerView[0].innerHTML = quizeInfo[0].quizAnswer;
-        // questionAnswerView[1].innerHTML = quizeInfo[1].quizAnswer;
-        // questionAnswerView[2].innerHTML = quizeInfo[2].quizAnswer;
-
-
-        //for문
-        // for (let i = 0; i < quizeInfo.length; i++) {
-        //     questionTitleNum[i].innerHTML = quizeInfo[i].quizNum;
-        //     questionTitleAsk[i].innerHTML = quizeInfo[i].quizAsk;
-        //     questionAnswerView[i].innerHTML = quizeInfo[i].quizAnswer;
-
-        // }
-
-        //each()
-        quizWrap.forEach((e, i) => {
-            questionTitleNum[i].innerHTML = e.quizNum;
-            questionTitleAsk[i].innerHTML = e.quizAsk;
-            questionAnswerView[i].innerHTML = e.quizAnswer;
-
-        });
-
-
-        //정답숨기기
-        questionAnswerView.forEach(el => {
-            el.style.displasy = "none";
-
-        });
-
-        //정답 확인
-        questionAnswerConfirm.forEach((el,i) => {
-            el.addEventListener("click", () =>{
-                el.style.displasy = "none";
-                questionAnswerView[i].style.displasy = "none";
-            })
-        });  
-        
-        // 지현님 작업
-        // questionAnswerConfirm.forEach((confirm,idx) => {
-        //     confirm.addEventListener('click',() => {
-        //         confirm.style.display = 'none';
-        //         questionAnswerView[idx].style.display = 'block';
-        //         document.querySelectorAll('.card')[idx].classList.add('good');
-        //     });
-        // });
-
-
-        // 메뉴
-        document.querySelector(".ham").addEventListener("click", function () {
-            document.querySelector("nav").classList.toggle("show");
-        });
-    </script>
 </body>
+<script>
+    // 퀴즈
+    const quizWrap = document.querySelectorAll(".quizWrap");
+    const questionQuiz = document.querySelectorAll(".question_quiz");
+    const questionTitle = document.querySelectorAll(".question_title");
+    const questionTitleNum = document.querySelectorAll(".question_title_num");
+    const questionTitleAsk = document.querySelectorAll(".question_title_ask");
+    const questionAnswer = document.querySelectorAll(".question_answer");
+    const questionAnswerImg = document.querySelectorAll(".question_answer_img");
+    const questionAnswerConfirm = document.querySelectorAll(".question_answer_confirm");
+    const questionAnswerView = document.querySelectorAll(".question_answer_view");
+    const dog = document.querySelectorAll(".card");
+
+
+    //문제 정보
+    const quizInfo = [
+        {
+            quizNum : "1.",
+            quizAsk : "채소 장사꾼이 제일 싫어하는 외국의 도시는?",
+            quizAnswer : "시드니"
+        },
+        {
+            quizNum : "2.",
+            quizAsk : "가장 비싼 새는?",
+            quizAnswer : "백조"
+        },
+        {
+            quizNum : "3.",
+            quizAsk : "소녀가 강으로 여행가면?",
+            quizAnswer : "걸리버 여행"
+        }
+    ]
+    
+    //문제표시
+    quizInfo.forEach((ele, index) => {
+        questionTitleNum[index].innerHTML= quizInfo[index].quizNum;
+        questionTitleAsk[index].innerHTML= quizInfo[index].quizAsk;
+        questionAnswerView[index].innerHTML = quizInfo[index].quizAnswer;
+    })
+
+    // 정답숨기기
+    questionAnswerView.forEach((ele, index) => {
+        ele.style.display="none";
+    })
+
+    // 정답확인
+    questionAnswerConfirm.forEach((ele, index) => {
+        ele.addEventListener("click", function () {
+            ele.style.display = "none";
+            // questionAnswerView[index].style.display="block";
+            ele.nextElementSibling.style.display="block";
+            dog[index].classList.add("good");
+        })
+    })
+    //
+    document.querySelector(".ham").addEventListener("click", function () {
+        document.querySelector("nav").classList.toggle("show");
+    })
+</script>
 
 </html>
