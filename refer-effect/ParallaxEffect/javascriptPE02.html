@@ -14,7 +14,52 @@
   <link rel="stylesheet" href="../assets/css/highlight.css">
 
   <style>
+    .paraDot {
+      position: fixed;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1000;
+      background: rgba(0, 0, 0, .4);
+      padding: 20px 10px;
+      border-radius: 30px;
+    }
 
+    .paraDot li {
+      list-style: none;
+    }
+
+    .paraDot li a {
+      width: 20px;
+      height: 20px;
+      display: block;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      margin: 8px;
+      position: relative;
+      text-decoration: none;
+    }
+
+    .paraDot li.active a {
+      background: #fff;
+    }
+
+    .paraDot li a span {
+      position: absolute;
+      left: -105px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #fff;
+      color: #000;
+      display: block;
+      padding: 2px 15px;
+      border-radius: 30px;
+      opacity: 0;
+    }
+
+    .paraDot li.active a span {
+      opacity: 1;
+    }
   </style>
 </head>
 
@@ -22,42 +67,28 @@
 
   <!-- header -->
   <header class="paraInfo">
-    <h1><a href="index.html">Parallax Effect01 - javascript</a></h1>
-    <p>패랠랙스 스크로링 효과 - 메뉴 이동</p>
+    <h1><a href="index.html">Parallax Effect02 - javascript</a></h1>
+    <p>패랠랙스 스크로링 효과 - 닷 메뉴</p>
   </header>
   <!-- //header -->
 
 
   <!-- main -->
   <main>
-    <div class="paraScroll">scrollTop() : <span>0</span></div>
-    <div class="paraInfo2">
-      <ul>
-        <li>section1 offset(): <span class="offset1">0</span></li>
-        <li>section2 offset(): <span class="offset2">0</span></li>
-        <li>section3 offset(): <span class="offset3">0</span></li>
-        <li>section4 offset(): <span class="offset4">0</span></li>
-        <li>section5 offset(): <span class="offset5">0</span></li>
-        <li>section6 offset(): <span class="offset6">0</span></li>
-        <li>section7 offset(): <span class="offset7">0</span></li>
-        <li>section8 offset(): <span class="offset8">0</span></li>
-        <li>section9 offset(): <span class="offset9">0</span></li>
-      </ul>
-
-    </div>
+    <div class="paraScroll">window.scrollY : <span>0</span></div>
 
     <!--//scroll-->
-    <div class="paraNav">
+    <div class="paraDot">
       <ul>
-        <li class="active"><a href="#section1">s1</a></li>
-        <li><a href="#section2">s2</a></li>
-        <li><a href="#section3">s3</a></li>
-        <li><a href="#section4">s4</a></li>
-        <li><a href="#section5">s5</a></li>
-        <li><a href="#section6">s6</a></li>
-        <li><a href="#section7">s7</a></li>
-        <li><a href="#section8">s8</a></li>
-        <li><a href="#section9">s9</a></li>
+        <li class="active"><a href="#section1"><span>section1</span></a></li>
+        <li><a href="#section2"><span>section2</span></a></li>
+        <li><a href="#section3"><span>section3</span></a></li>
+        <li><a href="#section4"><span>section4</span></a></li>
+        <li><a href="#section5"><span>section5</span></a></li>
+        <li><a href="#section6"><span>section6</span></a></li>
+        <li><a href="#section7"><span>section7</span></a></li>
+        <li><a href="#section8"><span>section8</span></a></li>
+        <li><a href="#section9"><span>section9</span></a></li>
       </ul>
     </div>
     <!-- //nav -->
@@ -70,7 +101,7 @@
         <figure class="img-Wrap">
           <div class="img"></div>
         </figure>
-        <p class="desc">Don't dwell on the past</p>
+        <p class="desc">그러나 겨울이 지나고 나의 별에도 봄이 오면</p>
       </section>
       <!-- section1 -->
 
@@ -167,20 +198,26 @@
       <h2>자바스크립트</h2>
       <ul>
         <li><a href="javascriptPE01.html">1</a></li>
-        <li><a href="javascriptPE02.html">2</a></li>
+        <li class="active"><a href="javascriptPE02.html">2</a></li>
         <li><a href="javascriptPE03.html">3</a></li>
         <li><a href="javascriptPE04.html">4</a></li>
         <li><a href="javascriptPE05.html">5</a></li>
+        <li><a href="javascriptPE06.html">6</a></li>
+        <li><a href="javascriptPE07.html">7</a></li>
+        <li><a href="javascriptPE08.html">8</a></li>
       </ul>
     </div>
     <div class="footerInfo">
       <h2>제이쿼리</h2>
       <ul>
-        <li class="active"><a href="jqueryPE01.html">1</a></li>
+        <li><a href="jqueryPE01.html">1</a></li>
         <li><a href="jqueryPE02.html">2</a></li>
         <li><a href="jqueryPE03.html">3</a></li>
         <li><a href="jqueryPE04.html">4</a></li>
         <li><a href="jqueryPE05.html">5</a></li>
+        <li><a href="jqueryPE06.html">6</a></li>
+        <li><a href="jqueryPE07.html">7</a></li>
+        <li><a href="jqueryPE08.html">8</a></li>
       </ul>
     </div>
   </footer>
@@ -596,31 +633,32 @@
 </code></pre>
             </div>
             <div class="javascript">
-              <pre><code class="language-js">$('.paraNav ul li').click(function (e) {
-    e.preventDefault();
-    let target = $(this);
-    let index = target.index();
-    let section = $('.paraCont > section').eq(index);
-    let offset = section.offset().top;
-
-    $('html, body').animate({scrollTop: offset}, 600);
+              <pre><code class="language-js">document.querySelectorAll('.paraNav ul li a').forEach((el, idx) => {
+    el.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(el.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
 
-$(window).scroll(function () {
-    let scrollTop = $(window).scrollTop();
+window.addEventListener('scroll', function () {
+    let scrollTop = document.documentElement.scrollTop || window.scrollY || window.pageYOffset; 
 
-    $('.content-item').each(function (i) {
-        if (scrollTop >= $(this).offset().top - 2) {
-            $('.paraNav ul li').eq(i).addClass('active').siblings().removeClass('active');
+    document.querySelectorAll('.paraNav ul li').forEach((el, idx) =&gt; {
+        if (scrollTop &gt;= document.getElementById('section' + (idx + 1)).offsetTop - 2) {
+            document.querySelectorAll('.paraNav ul li').forEach(el =&gt; el.classList.remove('active'));
+            document.querySelector('.paraNav ul li:nth-child(' + (idx + 1) + ')').classList.add('active');
         }
     });
 
-    //info
-    $('.paraScroll span').text(parseInt(scrollTop));
 
-    for (let i = 1; i &lt;= $('.content-item').length; i++) {
-        $('.offset' + i).text(parseInt($('#section' + i).offset().top) + 'px');
-    }
+    //info
+    document.querySelector('.paraScroll span').innerText = parseInt(scrollTop) + 'px';
+
+    document.querySelectorAll('.content-item').forEach((el, idx) =&gt; {
+        document.querySelector('.offset' + (idx + 1)).innerText = parseInt(document.querySelector('#section' + (idx + 1)).offsetTop) + 'px';
+    });
 });
 </code></pre>
             </div>
@@ -634,36 +672,31 @@ $(window).scroll(function () {
 
 
   <!-- script -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="../assets/js/custom.js"></script>
   <script src="../assets/js/highlight.min.js"></script>
   <script>
-    $('.paraNav ul li').click(function (e) {
-      e.preventDefault();
-      let target = $(this);
-      let index = target.index();
-      let section = $('.paraCont > section').eq(index);
-      let offset = section.offset().top;
-
-      $('html, body').animate({ scrollTop: offset }, 600);
+    document.querySelectorAll('.paraDot ul li a').forEach((el, idx) => {
+      el.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(el.getAttribute('href')).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
     });
 
-    $(window).scroll(function () {
-      let scrollTop = $(window).scrollTop();
+    window.addEventListener('scroll', () => {
+      let scrollTop = document.documentElement.scrollTop || window.scrollY || window.pageYOffset;
 
-      $('.content-item').each(function (i) {
-        if (scrollTop >= $(this).offset().top - 2) {
-          $('.paraNav ul li').eq(i).addClass('active').siblings().removeClass('active');
+      document.querySelector('.paraScroll span').innerText = parseInt(scrollTop) + 'px';
+
+      document.querySelectorAll('.paraDot ul li').forEach((li, idx) => {
+        if (scrollTop > document.getElementById('section' + (idx + 1)).offsetTop - 2) {
+          document.querySelectorAll('.paraDot ul li').forEach(el => {
+            el.classList.remove('active');
+          });
+          document.querySelector('.paraDot ul li:nth-child(' + (idx + 1) + ')').classList.add('active');
         }
       });
-
-      //info
-      $('.paraScroll span').text(parseInt(scrollTop));
-
-      for (let i = 1; i <= $('.content-item').length; i++) {
-        $('.offset' + i).text(parseInt($('#section' + i).offset().top) + 'px');
-      }
     });
   </script>
 </body>
