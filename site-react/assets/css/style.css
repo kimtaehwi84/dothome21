@@ -1062,7 +1062,6 @@ table {
           justify-content: space-between;
   font-family: "SCoreDream";
   border-top: 1px solid #2e2e30;
-  border-bottom: 1px solid #2e2e30;
 }
 
 #header .header__port2 {
@@ -1197,8 +1196,7 @@ table {
 }
 
 #mainCont2 {
-  background: url("/site-react/assets/img/bg2.jpg") no-repeat center top;
-  background-color: #000;
+  background: url("/assets/img/bg2.jpg") no-repeat center top;
   height: 100vh;
   color: #fff;
   font-family: 'Cormorant Upright', serif;
