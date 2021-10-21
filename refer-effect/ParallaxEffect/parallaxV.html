@@ -422,6 +422,9 @@
     $(window).scroll(function () {
       let scrollTop = $(window).scrollTop();
 
+      let nWidth = scrollTotalWidth - $(window).width();
+      let nHeight = $ - $(window).width();
+
       $(".contentWrap").css({
         "transform": "translateX(" + -scrollTop + "px)"
       });
