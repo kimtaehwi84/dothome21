@@ -28,14 +28,14 @@ pre {
     font-weight: 400;
 }
 .btn-outline {
-    color: #E65447;
+    color: #1761a1;
     background-color: transparent;
-    border-color: #E65447;
+    border-color: #1761a1;
 }
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active {
     color: #fff;
-    background-color: #E65447;
-    border-color: #E65447;
+    background-color: #1761a1;
+    border-color: #1761a1;
 }
 .btn-outline-inverse {
     color: #fff;
@@ -43,7 +43,7 @@ pre {
     border-color: #cdbfe3;
 }
 .btn-outline-inverse:hover, .btn-outline-inverse:focus, .btn-outline-inverse:active {
-    color: #E65447;
+    color: #1761a1;
     text-shadow: none;
     background-color: #fff;
     border-color: #fff;
@@ -52,7 +52,7 @@ pre {
     display: block;
     font-weight: 500;
     color: #fff;
-    background-color: #E65447;
+    background-color: #1761a1;
     border-radius: 15%;
     cursor: default;
     text-align: center;
@@ -70,7 +70,7 @@ pre {
     line-height: 140px;
 }
 .bs-booticon-inverse {
-    color: #E65447;
+    color: #1761a1;
     background-color: #fff;
 }
 .bs-booticon-outline {
