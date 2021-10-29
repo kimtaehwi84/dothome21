@@ -15,10 +15,9 @@
             font-style: normal;
         }
         * {
-            margin: 0;
-            padding: 0;
-            font-size: 16px;
+            margin: 0; padding: 0;
             font-family: 'S-CoreDream-4Regular';
+            font-size: 16px;
         }
         a {
             color: black;
@@ -36,8 +35,8 @@
             margin: 0 auto;
         }
         #body {
-            margin-top: 100px;
             display: flex;
+            margin-top: 50px;
             justify-content: space-between;
             font-family: 'S-CoreDream-4Regular';
         }
@@ -49,7 +48,7 @@
         }
         #aside h2 a {
             display: inline-block;
-            font-size: 1vw;
+
             color: transparent;
             background: url(../test/assets/img/government/government24_logo.jpg) no-repeat;
             background-size: cover;
@@ -62,7 +61,7 @@
         #aside nav .mainMenu .subMenu a {
             font-size: 20px;
             font-weight: bold;
-            padding: 20px 0;
+            padding: 10px 0;
             display: inline-block;
         }
         #aside nav .mainMenu .subMenu ul {
@@ -76,7 +75,7 @@
             font-size: 15px;
             font-weight: bold;
             display: block;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #ccc;
             padding: 15px;
         }
         .banner {
@@ -103,12 +102,12 @@
             position: relative;
         }
         .slider-inner .slider::before {
+            font-family: 'S-CoreDream-4Regular';
             position: absolute;
             left: 5px;top: 5px;
             padding: 5px 10px 3px;
             background: rgba(0, 0, 0, .3);
             color: #fff;
-            font-family: 'S-CoreDream-4Regular';
         }
         .slider-inner .slider:nth-child(1) {
             z-index: 3;
@@ -144,9 +143,8 @@
         .tabMenu .tab-btn ul li .child::after {
             content: '';
             position: absolute;
-            right: 0;
-            width: 3px;
-            height: 20px;
+            width: 2px;height: 20px;
+            right: 0; top: 13px;
             background: #000;
         }
         .tab-cont {
@@ -173,10 +171,10 @@
             margin-top: 50px;
         }
         .noticeWrap .row {
-            padding: 20px;
-            background: #F7F7F7;
             display: flex;
             justify-content: space-between;
+            background: #F7F7F7;
+            padding: 20px;
         }
         .wrapper {
             padding: 5px;
@@ -196,10 +194,8 @@
         .noticeWrap .notice strong::after {
             content: '';
             position: absolute;
-            right: 0;
-            top: 0;
-            width: 20px;
-            height: 20px;
+            width: 25px;height: 25px;
+            right: 0;top: 0;
             background: url(../test/assets/img/government/plu_butt.jpg) no-repeat;
             background-size: cover;
             background-position: center;
@@ -208,20 +204,18 @@
             width: 50%;
             display: block;
             margin: 0 auto;
-            padding-bottom: 20px;
+            padding-bottom: 15px;
         }
         .noticeWrap .notice .desc span {
-            display: inline-block;
             position: relative;
+            display: inline-block;
         }
         .noticeWrap .notice .desc span::before {
             content: '';
             position: absolute;
-            left: 15px;
-            top: 12px;
-            width: 2px;
-            height: 2px;
-            background: #595959;
+            top: 12px;left: 10px;         
+            width: 4px;height: 4px;
+            background: #494949;
             border-radius: 50%;
         }
         .noticeWrap .notice .desc span a {
@@ -234,7 +228,7 @@
             font-weight: 600;
             padding: 5px 0;
             margin-left: 20px;
-            color: #595959;
+            color: #494949;
         }
         #footer {
             margin-top: 100px;
@@ -250,12 +244,12 @@
         }
         #footer .footerWrap .footerLogo img {
             width: 100%;
-            margin-top: 4px;
+            margin-top: 5px;
         }
         #footer .footerWrap .address {
             float: left;
-            margin-top: 5px;
-            margin-left: 10px;
+            margin-top: 10px;
+            margin-left: 30px;
         }
         #footer .footerWrap .address p {
             font-size: 12px;
@@ -265,12 +259,11 @@
         }
         #footer .footerWrap .footerSns {
             float: right;
-            width: 200px;
-            height: 60px;
+            width: 200px;height: 60px;
             margin-top: 20px;
             background-image: url(../test/assets/img/government/footer_sns.jpg);
-            background-repeat: no-repeat;
             background-size: 100%;
+            background-repeat: no-repeat;
         }
     </style>
 </head>
@@ -285,41 +278,41 @@
                         <li class="subMenu">
                             <a href="#">서비스</a>
                             <ul>
-                                <li><a href="#">분야별 정책정보</a></li>
-                                <li><a href="#">정책뉴스</a></li>
-                                <li><a href="#">연구보고서</a></li>
-                                <li><a href="#">간행물</a></li>
-                                <li><a href="#">정책자료</a></li>
+                                <li><a href="#">분야별 정책정보1</a></li>
+                                <li><a href="#">정책뉴스1</a></li>
+                                <li><a href="#">연구보고서1</a></li>
+                                <li><a href="#">간행물1</a></li>
+                                <li><a href="#">정책자료1</a></li>
                             </ul>
                         </li>
                         <li class="subMenu">
                             <a href="#">정책정보</a>
                             <ul>
-                                <li><a href="#">분야별 정책정보</a></li>
-                                <li><a href="#">정책뉴스</a></li>
-                                <li><a href="#">연구보고서</a></li>
-                                <li><a href="#">간행물</a></li>
-                                <li><a href="#">정책자료</a></li>
+                                <li><a href="#">분야별 정책정보2</a></li>
+                                <li><a href="#">정책뉴스2</a></li>
+                                <li><a href="#">연구보고서2</a></li>
+                                <li><a href="#">간행물2</a></li>
+                                <li><a href="#">정책자료2</a></li>
                             </ul>
                         </li>
                         <li class="subMenu">
                             <a href="#">기관정보</a>
                             <ul>
-                                <li><a href="#">분야별 정책정보</a></li>
-                                <li><a href="#">정책뉴스</a></li>
-                                <li><a href="#">연구보고서</a></li>
-                                <li><a href="#">간행물</a></li>
-                                <li><a href="#">정책자료</a></li>
+                                <li><a href="#">분야별 정책정보3</a></li>
+                                <li><a href="#">정책뉴스3</a></li>
+                                <li><a href="#">연구보고서3</a></li>
+                                <li><a href="#">간행물3</a></li>
+                                <li><a href="#">정책자료3</a></li>
                             </ul>
                         </li>
                         <li class="subMenu">
                             <a href="#">고객센터</a>
                             <ul>
-                                <li><a href="#">분야별 정책정보</a></li>
-                                <li><a href="#">정책뉴스</a></li>
-                                <li><a href="#">연구보고서</a></li>
-                                <li><a href="#">간행물</a></li>
-                                <li><a href="#">정책자료</a></li>
+                                <li><a href="#">분야별 정책정보4</a></li>
+                                <li><a href="#">정책뉴스4</a></li>
+                                <li><a href="#">연구보고서4</a></li>
+                                <li><a href="#">간행물4</a></li>
+                                <li><a href="#">정책자료4</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -385,31 +378,31 @@
                     <div class="tab-cont cont2">
                         <div class="service">
                             <a href="#">
-                                <img src="../test/assets/img/government/contservice_image_6.jpg" alt="토지(임야)대장">
+                                <img src="../test/assets/img/government/contservice_image_5.jpg" alt="주민등록표등본">
+                            </a>
+                            <p>주민등록표등본<br>(초본)교부</p>
+                        </div>
+                        <div class="service">
+                            <a href="#">
+                                <img src="../test/assets/img/government/contservice_image_4.jpg" alt="토지(임야)대장">
                             </a>
                             <p>토지(임야)대장<br>열람/등본 발급신청</p>
                         </div>
                         <div class="service">
                             <a href="#">
-                                <img src="../test/assets/img/government/contservice_image_7.jpg" alt="주민등록표등본">
-                            </a>
-                            <p>주민등록표등본<br>(초본)교뷰</p>
-                        </div>
-                        <div class="service">
-                            <a href="#">
-                                <img src="../test/assets/img/government/contservice_image_8.jpg" alt="지방세 납세증명">
-                            </a>
-                            <p>지방세 납세증명</p>
-                        </div>
-                        <div class="service">
-                            <a href="#">
-                                <img src="../test/assets/img/government/contservice_image_4.jpg" alt="건축물대장">
+                                <img src="../test/assets/img/government/contservice_image_3.jpg" alt="건축물대장청">
                             </a>
                             <p>건축물대장 등/초본<br>발급(열람)신청</p>
                         </div>
                         <div class="service">
                             <a href="#">
-                                <img src="../test/assets/img/government/contservice_image_5.jpg" alt="지적도(임야도)">
+                                <img src="../test/assets/img/government/contservice_image_2.jpg" alt="지방세 납세증명">
+                            </a>
+                            <p>지방세 납세증명</p>
+                        </div>
+                        <div class="service">
+                            <a href="#">
+                                <img src="../test/assets/img/government/contservice_image_1.jpg" alt="지적도(임야도)">
                             </a>
                             <p>지적도(임야도) 등본<br>발급 및 열람</p>
                         </div>
@@ -420,7 +413,7 @@
                         <div class="notice news">
                             <div class="wrapper">
                                 <strong>공지사항</strong>
-                                <img src="../test/assets/img/government/contservice_image_6.jpg" alt="공지사항">
+                                <img src="../test/assets/img/government/contservice_image_6.jpg" alt="공지사항 이미지">
                                 <div class="desc">
                                     <span><a href="#">[어디서나 대학민원] 호서대학교 팩스가 제대로 안가져요</a></span>
                                     <span><a href="#">[전라북도 고창군] 새올행정시스템 DROP 팩스가 제대로 안가져요</a></span>
@@ -431,7 +424,7 @@
                         <div class="notice data">
                             <div class="wrapper">
                                 <strong>자료실</strong>
-                                <img src="../test/assets/img/government/contservice_image_7.jpg" alt="자료실">
+                                <img src="../test/assets/img/government/contservice_image_7.jpg" alt="자료실 이미지">
                                 <div class="desc">
                                     <span><a href="#">인터넷 민원발급 위한 프로그램(주민등록표본)</a></span>
                                     <span><a href="#">정부24 발급물 등록 프로그램</a></span>
@@ -442,7 +435,7 @@
                         <div class="notice faq">
                             <div class="wrapper">
                                 <strong>FAQ</strong>
-                                <img src="../test/assets/img/government/contservice_image_8.jpg" alt="FAQ">
+                                <img src="../test/assets/img/government/contservice_image_8.jpg" alt="FAQ 이미지">
                                 <div class="desc">
                                     <span><a href="#">'민원발급불가'또는'발급불가'프린터 어떻게 처리해야 하나요?</a></span>
                                     <span><a href="#">가족관계증명서 프린터 발급이 가능한 종류는 무엇이 있나요?</a></span>
@@ -464,11 +457,7 @@
                     <p>정부24 콜센터 1588-2188 정부민원안내콜센터 국번없이 110</p>
                     <p>Copyright © Ministry of the Interior and Safety.All Rights reserved.</p>
                 </div>
-                <div class="footerSns">
-                    <span class="blog"></span>
-                    <span class="twiter"></span>
-                    <span class="facebook"></span>
-                </div>
+                <div class="footerSns"></div>
             </div>
         </footer>
 
