@@ -466,7 +466,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script>
-        // aside
+        // 메인탭메뉴
         $(document).ready(function (e) {
             $(".mainMenu > .subMenu > a").on("click", function (e) {
                 if ($(this).parent().has("ul")) {
@@ -489,7 +489,7 @@
             });
         });
 
-        // banner
+        // 슬라이드
         const sliderImg = $(".slider-img");
         const sliderInner = $(".slider-inner");
         const slider = $(".slider");
@@ -506,7 +506,7 @@
             });
         }, 3000);
 
-        // tabMenu
+        // 메인 탭메뉴
         const tabBtn = $(".tab-btn ul li");
         const tabCont = $(".tab-cont");
 
@@ -517,7 +517,6 @@
             target.addClass("active");
 
             let index = target.index();
-            // alert(index);
             tabCont.css("display", "none");
             tabCont.eq(index).css("display", "flex");
         });
