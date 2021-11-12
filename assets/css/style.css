@@ -1,6 +1,24 @@
 /* ==================================================
    Info Block
 ================================================== */
+
+/* 스노우
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@200,400&display=swap");
+
+.fa-snowflake {
+	animation: fall 5s linear forwards;
+	color: #fff;
+	position: absolute;
+}
+
+@keyframes fall {
+	to {
+		transform: translateY(90vh);
+	}
+} */
+
+
 .info-block {
     border-left: 4px solid #1761a1;
     overflow: hidden;
