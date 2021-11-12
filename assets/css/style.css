@@ -2,9 +2,17 @@
    Info Block
 ================================================== */
 
-/* 스노우
 
+/* 스노우
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@200,400&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
 
 .fa-snowflake {
 	animation: fall 5s linear forwards;
