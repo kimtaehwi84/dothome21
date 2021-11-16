@@ -1186,25 +1186,25 @@ body.active {
     z-index: 99999;
 }
 .aniLast .balloon1 {
-    width: 9vw;
+    width: 15vw;
     position: absolute;
     left: 5vw; top: 5vw;
     animation: balloonMove 2.5s ease-in-out infinite;
 }
 .aniLast .balloon2 {
-    width: 9vw;
+    width: 15vw;
     position: absolute;
     left: 20vw; top: 15vw;
     animation: balloonMove 4s ease-in-out infinite;
 }
 .aniLast .balloon3 {
-    width: 9vw;
+    width: 15vw;
     position: absolute;
     left: 40vw; top: 10vw;
     animation: balloonMove 4.2s ease-in-out infinite;
 }
 .aniLast .balloon4 {
-    width: 9vw;
+    width: 15vw;
     position: absolute;
     left: 57vw; top: 7vw;
     animation: balloonMove 2s ease-in-out infinite;
@@ -1213,7 +1213,7 @@ body.active {
     50% {transform: translateY(10%);}
 }
 .aniLast .ballCha {
-    width: 12vw;
+    width: 20vw;
     position: fixed;
     left: 42vw; bottom: 7vw;
 }
@@ -1238,7 +1238,7 @@ body.active {
 }
 .mint .scriptBtn h3 {color: #3BB6A7;}
 
-.effect img {position: relative; width: 90%;} 
+.effect img {position: relative; width: 80%;} 
 .effect .effectTxt {
     width: 29vw; height: 18vw;
     display: flex;
@@ -1289,7 +1289,7 @@ body.active {
     animation: shakeY 1.5s 1s ease-in-out infinite;
 }
 .scriptLast .scriptLastCha {
-    width: 12vw;
+    width: 20vw;
     position: fixed;
     left: 65%; bottom: 30%;
 }
