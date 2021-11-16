@@ -214,40 +214,32 @@ body.active {
 }
 .main .tree2 {
     opacity: 0;
-    width: 14vw;
+    width: 20vw;
     position: absolute;
-    left: 26vw; bottom: 5vw;
+    left: 15vw; bottom: 3vw;
     transform: translateY(150px);
     z-index: 500;
 }
 .main .tree3 {
     opacity: 0;
-    width: 19vw;
-    position: absolute;
-    left: 12vw; bottom: 4vw;
-    transform: translateY(150px);
-    z-index: 500;
-}
-.main .tree4 {
-    opacity: 0;
     width: 10vw;
     position: absolute;
-    right: 30vw; bottom: 7vw;
+    right: 32vw; bottom: 7vw;
     transform: translateY(200px);
     z-index: 400;
 }
-.main .tree5 {
+.main .tree4 {
     opacity: 0;
-    width: 16vw;
+    width: 22vw;
     position: absolute;
     right: 13vw; bottom: 3vw;
     transform: translateY(150px);
     z-index: 500;
 }
-.main .tree5.loading {
+.main .tree4.loading {
     animation: treeMove 5s infinite ease;
 }
-.main .tree6 {
+.main .tree5 {
     opacity: 0;
     width: 14vw;
     position: absolute;
@@ -426,9 +418,9 @@ body.active {
     left: 33vw; bottom: 6vw;
 }
 .skills2 .tree3 {
-    width: 16vw;
+    width: 15vw;
     position: absolute;
-    right: 0%; bottom: 5vw;
+    right: 35vw; bottom: 5vw;
 }
 .skills2 .waveTop {
     position: absolute;
@@ -526,7 +518,7 @@ body.active {
     right: 10vw; top: 8vw;
 }
 .intro .tree1 {
-    width: 14vw;
+    width: 20vw;
     position: absolute;
     left: 5vw; bottom: 7vw;
 }
@@ -536,10 +528,11 @@ body.active {
     right: 20vw; bottom: 7vw;
 }
 .intro .tree3 {
-    width: 19vw;
+    width: 25vw;
     position: absolute;
-    right: 5vw; bottom: 7vw;
+    right: 0vw; bottom: 7vw;
 }
+
 .intro .car {
     width: 50vw;
     position: absolute;
@@ -566,7 +559,7 @@ body.active {
 .site .siteStore {
     width: 50vw;
     position: absolute;
-    left: 5vw; bottom: 7vw;
+    left: 0vw; bottom: 7vw;
 }
 .site .siteStore .siteTitle {
     position: absolute;
@@ -577,7 +570,7 @@ body.active {
     font-size: 2vw;
     line-height: 1;
     position: absolute;
-    left: -1%; bottom: 0%;
+    left: -2.5%; bottom: 0%;
 }
 .site .light {
     width: 7vw; height: 40vw;
@@ -638,10 +631,15 @@ body.active {
     position: fixed; 
     z-index: 1002;
 }
+.mart .tree2 {
+    width: 17vw;
+    position: absolute;
+    left: 40vw; bottom: 7.2vw;
+}
 .mart .heemMart {
     width: 35vw;
     position: absolute;
-    left: 6vw; bottom: 7vw;
+    left: 6vw; bottom: 7.2vw;
 }
 .mart .martCha {
     width: 40vw;
@@ -726,9 +724,9 @@ body.active {
 
 /* site - react */
 .react .tree_right_bg3 {
-    width: 50vw;
+    width: 60vw;
     position: absolute;
-    left: 15vw; bottom: 7vw;
+    left: 0vw; bottom: 7vw;
 }
 .react .tree2 {
     width: 14vw;
@@ -742,7 +740,7 @@ body.active {
 }
 .react .cloud2 {
     position: absolute;
-    right: 15%; top: 4vw;
+    right: 0%; top: 4vw;
 }
 .react .reactTitle {
     font-family: var(--font-eng);
@@ -751,78 +749,78 @@ body.active {
 }
 .react .reactTitle > div {
     position: absolute;
-    right: 30vw; bottom: 30vw;
+    right: 30vw; bottom: 20vw;
 }
 .react .shoes {
-    width: 41vw;
+    width: 33vw;
     position: absolute;
-    left: 35vw; bottom: 6vw;
+    left: 40vw; bottom: 6vw;
 }
 
 .react .reactCha {
     width: 30vw;
     position: absolute;
-    left: 62vw; bottom: 6vw;
+    left: 11vw; bottom: 6vw;
     animation: bounceInUp 1.2s 1 ease;
 }
 .react .reactTalk {
     width: 17vw;
     position: absolute;
-    left: 21vw; bottom: 22vw;
+    left: 21vw; bottom: 32vw;
     animation: bounceIn 1.2s 1 ease;
 }
 .react .reactText .react-typing-txt {
     display: none;
 }
 .react .reactText .react-typing {
-    width: 12vw;
+    width: 20vw;
     word-break: keep-all;
     font-family: var(--font-kor);
     color: #fff;
     font-size: 1.5vw;
     line-height: 1.4;
     position: absolute;
-    left: 13%; top: 20%;
+    left: 10%; top: 20%;
 }
 
 /* site - figma */
 .figma .cloud1 {
     width: 11vw;
     position: absolute;
-    right: 35vw; top: 6vw;
+    right: 25vw; top: 6vw;
 }
 .figma .tree1 {
-    width: 23vw;
+    width: 20vw;
     position: absolute;
     left: 0; bottom: 5vw;
 }
 .figma .tree2 {
-    width: 16vw;
+    width: 25vw;
     position: absolute;
-    right: 5vw; bottom: 7vw;
+    right: 5vw; bottom: 5vw;
 }
 .figma .figmaStore {
-    width: 55vw;
+    width: 48vw;
     position: absolute;
     left: 16vw; bottom: 6.5vw;
 }
 .figma .figmaStore h2 {
     font-family: var(--font-eng);
-    font-size: 4.5vw;
+    font-size: 4vw;
     line-height: 1;
     text-align: center;
     position: absolute;
-    left: 24%; top: 13%;
+    left: 20%; top: 13%;
 }
 .figma .figmaCha {
     width: 13vw;
     position: absolute;
-    right: 15vw; bottom: 6vw;
+    right: 0vw; bottom: 6vw;
 }
 .figma .figmaTalk {
-    width: 20vw;
+    width: 18vw;
     position: absolute;
-    right: 0vw; bottom: 22vw;
+    right: 13vw; bottom: 27vw;
     animation: bounceIn 1.2s 1 ease;
 }
 .figma .figmaText .figma-typing-txt {
@@ -836,7 +834,7 @@ body.active {
     font-size: 1.5vw;
     line-height: 1.4;
     position: absolute;
-    left: 13%; top: 25%;
+    left: 29%; top: 40%;
 }
 
 /* site - figmaPopup */
@@ -852,7 +850,7 @@ body.active {
     padding: 6% 0;
     border-radius: 2vw;
     background: #1C1B1B;
-    opacity: 90%;
+    opacity: 95%;
 }
 .figmaPopup a {
     transition: all 0.2s;
@@ -863,10 +861,9 @@ body.active {
 .figmaPopup ul {
     color: #027368;
     font-family: var(--font-eng);
-    font-size: 1.4vw;
+    font-size: 1.3vw;
 }
-.figmaPopup li {
-}
+.figmaPopup li {}
 
 .figmaPopup .book1 {
     position: absolute;
@@ -907,12 +904,19 @@ body.active {
 }
 .siteLast .cloud2 {
     position: absolute;
-    left: 40vw; top: 2.5vw;
+    left: 30vw; top: 2.5vw;
 }
 .siteLast .tree1 {
-    width: 23vw;
+    width: 18vw;
     position: absolute;
-    right: 33vw; bottom: 7vw;
+    right: 38vw; bottom: 7vw;
+    z-index: -3;
+}
+
+.siteLast .treebg {
+    width: 70vw;
+    position: absolute;
+    left: 0vw; bottom: 7vw;
     z-index: -3;
 }
 .siteLast .door {
@@ -963,27 +967,27 @@ body.active {
     color: rgba(255, 255, 255, 0.2);
 }
 .balloon3 .aniCha {
-    width: 39vw;
+    width: 50vw;
     position: absolute;
-    left: 30vw; bottom: 0;
+    left: 25vw; bottom: 0;
 }
 .balloon3 .aniCha .aniTitle {
     font-family: var(--font-eng);
     text-align: center;
     line-height: 1;
-    font-size: 2vw;
+    font-size: 1.7vw;
     position: absolute;
-    left: 50%; top: 75%; 
+    left: 53%; top: 66%; 
     transform: translate(-50%, -50%);
     animation: flash 2.5s ease infinite;
 }
 .balloon3 .aniCha .aniTitle h2 {
-    color: #e7e5bc;
+    color: #004B4E;
 }
 .balloon3 .aniBall .aniBtn {
     font-family: var(--font-eng);
-    font-size: 4vw;
-    color: #fff;
+    font-size: 3vw;
+    color: #A36B58;
     transition: all 0.2s;
 }
 .balloon3 .aniBall .aniBtn:hover {
@@ -1234,7 +1238,7 @@ body.active {
 }
 .mint .scriptBtn h3 {color: #3BB6A7;}
 
-.effect img {position: relative; width: 35vw; height: 20vw;} 
+.effect img {position: relative; width: 90%;} 
 .effect .effectTxt {
     width: 29vw; height: 18vw;
     display: flex;
@@ -1420,14 +1424,14 @@ body.active {
     color: #00977b81;
 }
 .myProfile .photo {
-    flex: 0 0 100%;
+    flex: 0 0 30%;
     position: relative;
     margin-top: 3vw;
 }
 .myProfile .photo .heart {
    position: absolute;
    width: 4vw;
-   right: 47%; top: 25%;
+   right: 0%; top: 0%;
    animation: shakeY 2s infinite;
 }
 
