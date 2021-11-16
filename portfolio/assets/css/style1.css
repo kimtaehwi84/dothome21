@@ -541,14 +541,14 @@ body.active {
     right: 5vw; bottom: 7vw;
 }
 .intro .car {
-    width: 39vw;
+    width: 50vw;
     position: absolute;
     left: 40%; bottom: 6vw;
 }
 .intro .carCloud {
     width: 11vw;
     position: absolute;
-    left: 102%; bottom: 6.5vw;
+    left: 70%; bottom: 5vw;
     animation: rubberBand 1s ease infinite;
 }
 
@@ -564,20 +564,20 @@ body.active {
     right: 10vw; bottom: 7vw;
 }
 .site .siteStore {
-    width: 53vw;
+    width: 50vw;
     position: absolute;
     left: 5vw; bottom: 7vw;
 }
 .site .siteStore .siteTitle {
     position: absolute;
-    top: 20%;
-    margin-left: 25%;
+    top: 25%;
+    margin-left: 22%;
     font-family: var(--font-eng);
-    width: 18vw;
+    width: 70vw;
     font-size: 2vw;
     line-height: 1;
     position: absolute;
-    left: 0; bottom: 0%;
+    left: -1%; bottom: 0%;
 }
 .site .light {
     width: 7vw; height: 40vw;
@@ -585,30 +585,30 @@ body.active {
 }
 .site .light.siteLight1 {
     position: absolute;
-    left: 15.3%; top: 5%;
+    left: 13.3%; top: 22%;
 }
 .site .light.siteLight2 {
     position: absolute;
-    left: 34%; top: 5%;
+    left: 28%; top: 22%;
 }
 .site .light.siteLight3 {
     position: absolute;
-    left: 52.53%; top: 5%;
+    left: 54%; top: 22%;
 }
 .site .light.siteLight4 {
     position: absolute;
-    left: 71.5%; top: 5%;
+    left: 67.5%; top: 22%;
 }
 .site .subCha {
-    width: 10vw;
+    width: 15vw;
     position: absolute;
-    right: 39vw; bottom: 6vw;
+    right: 34vw; bottom: 6vw;
     animation: bounceInUp 1.2s 1 ease;
 }
 .site .siteTalk {
     width: 17vw;
     position: absolute;
-    right: 21vw; bottom: 22vw;
+    right: 18vw; bottom: 22vw;
     animation: bounceIn 1.2s 1 ease;
 }
 .site .siteText .site-typing-txt {
@@ -619,10 +619,10 @@ body.active {
     word-break: keep-all;
     font-family: var(--font-kor);
     color: #fff;
-    font-size: 1.5vw;
-    line-height: 1.4;
+    font-size: 1.3vw;
+    line-height: 1.5;
     position: absolute;
-    left: 13%; top: 20%;
+    left: 16%; top: 20%;
 }
 
 /* site - mart */
@@ -632,31 +632,27 @@ body.active {
     right: 15vw; top: 10vw;
 }
 .mart .tree1 {
-    width: 19vw;
+    width: 40vw;
     position: absolute;
-    right: 5vw; bottom: 5vw;
+    left: 60vw; bottom: 8vw;
+    position: fixed; 
+    z-index: 1002;
 }
 .mart .heemMart {
-    width: 69vw;
+    width: 35vw;
     position: absolute;
     left: 6vw; bottom: 7vw;
 }
-.mart .heemMart h2 {
-    display: inline-block;
-    font-size: 5vw;
-    text-transform: uppercase;
-    font-family: var(--font-eng);
-    width: 10%;
-    color: #D46249;
-    text-align: center;
-    line-height: 1;
-    position: absolute;
-    left: 8%; top: 39%;
-}
 .mart .martCha {
-    width: 12vw;
+    width: 40vw;
     position: absolute;
-    left: 50vw; bottom: 31vw;
+    left: 1vw; bottom: 30vw;
+}
+
+.mart .heemMartBgTtee {
+    width: 35vw;
+    position: absolute;
+    right: 0vw; bottom: 7.1vw;
 }
 
 /* site - sitePopup */
@@ -697,7 +693,7 @@ body.active {
 .sitePopup li .ex {
     font-family: var(--font-kor);
     font-size: 1vw;
-    color: #006B64;
+    color: #fff;
 }
 .sitePopup li .siteBtn {
     position: relative;
@@ -710,14 +706,14 @@ body.active {
 .sitePopup li .siteBtn::before {
     content: '';
     width: 0.5vw; height: 2vw;
-    background: #006B64;
+    background: #FFAFAC;
     border-radius: 1vw;
     position: absolute;
     left: 0; top: 10%;
 }
 .sitePopup li .siteBtn span {
     display: inline-block;
-    color: #006B64;
+    color: #FFAFAC;
     transition: all 0.2s;
     padding: 1% 2%;
     border-radius: 1vw;
@@ -729,8 +725,8 @@ body.active {
 }
 
 /* site - react */
-.react .tree1 {
-    width: 14vw;
+.react .tree_right_bg3 {
+    width: 50vw;
     position: absolute;
     left: 15vw; bottom: 7vw;
 }
@@ -762,23 +758,11 @@ body.active {
     position: absolute;
     left: 35vw; bottom: 6vw;
 }
-.react .nikeLogo {
-    width: 8vw;
-    position: absolute;
-    left: 45vw; bottom: 30vw;
-}
-.react .nikeLogo h2 {
-    font-family: var(--font-eng);
-    font-size: 8vw;
-    color: #C95551;
-    position: absolute;
-    left: 10%; top: -68%;
-    animation: flash 1.5s infinite linear;
-}
+
 .react .reactCha {
-    width: 10vw;
+    width: 30vw;
     position: absolute;
-    left: 24vw; bottom: 6vw;
+    left: 62vw; bottom: 6vw;
     animation: bounceInUp 1.2s 1 ease;
 }
 .react .reactTalk {
@@ -818,26 +802,27 @@ body.active {
     right: 5vw; bottom: 7vw;
 }
 .figma .figmaStore {
-    width: 45vw;
+    width: 55vw;
     position: absolute;
     left: 16vw; bottom: 6.5vw;
 }
 .figma .figmaStore h2 {
     font-family: var(--font-eng);
-    font-size: 3vw;
+    font-size: 4.5vw;
     line-height: 1;
+    text-align: center;
     position: absolute;
-    left: 5%; top: -18%;
+    left: 24%; top: 13%;
 }
 .figma .figmaCha {
-    width: 18vw;
+    width: 13vw;
     position: absolute;
-    right: 20vw; bottom: 6vw;
+    right: 15vw; bottom: 6vw;
 }
 .figma .figmaTalk {
-    width: 17vw;
+    width: 20vw;
     position: absolute;
-    right: 20vw; bottom: 22vw;
+    right: 0vw; bottom: 22vw;
     animation: bounceIn 1.2s 1 ease;
 }
 .figma .figmaText .figma-typing-txt {
@@ -851,7 +836,7 @@ body.active {
     font-size: 1.5vw;
     line-height: 1.4;
     position: absolute;
-    left: 13%; top: 20%;
+    left: 13%; top: 25%;
 }
 
 /* site - figmaPopup */
@@ -867,6 +852,7 @@ body.active {
     padding: 6% 0;
     border-radius: 2vw;
     background: #1C1B1B;
+    opacity: 90%;
 }
 .figmaPopup a {
     transition: all 0.2s;
@@ -875,53 +861,38 @@ body.active {
     color:rgba(85, 81, 77, 0.9)
 }
 .figmaPopup ul {
-    color: #fff;
+    color: #027368;
     font-family: var(--font-eng);
-    font-size: 3vw;
+    font-size: 1.4vw;
 }
 .figmaPopup li {
-    writing-mode: vertical-rl;
 }
+
 .figmaPopup .book1 {
     position: absolute;
-    left: 3.3%; top: 28%;
+    left: 8%; top: 63%;
 }
 .figmaPopup .book2 {
     position: absolute;
-    left: 16%; top: 28%;
+    left: 27.5%; top: 51.5%;
 }
 .figmaPopup .book3 {
     position: absolute;
-    left: 30%; top: 28%;
+    left: 43%; top: 70.5%;
 }
 .figmaPopup .book4 {
     position: absolute;
-    left: 41%; top: 28%;
+    left: 58%; top: 53%;
 }
 .figmaPopup .book5 {
     position: absolute;
-    left: 50%; top: 28%;
+    left: 72%; top: 66%;
 }
 .figmaPopup .book6 {
     position: absolute;
-    left: 58%; top: 28%;
+    left: 88%; top: 62%;
 }
-.figmaPopup .book7 {
-    position: absolute;
-    left: 67%; top: 28%;
-}
-.figmaPopup .book8 {
-    position: absolute;
-    left: 76%; top: 28%;
-}
-.figmaPopup .book9 {
-    position: absolute;
-    left: 85%; top: 28%;
-}
-.figmaPopup .book10 {
-    position: absolute;
-    left: 93%; top: 28%;
-}
+
 
 /* site - siteLast */
 .siteLast .star {
@@ -976,10 +947,11 @@ body.active {
     position: absolute;
     right: 0; bottom: 0;
     z-index: 99999;
+
 }
 
 /* animation - balloon3 */
-.balloon1, .balloon2, .balloon3, .aniLast {background: #E48289;}
+.balloon1, .balloon2, .balloon3, .aniLast {background: #F2C2C6;}
 .balloon3 .ballBackTxt {
     position: absolute;
     left: 50%; top: 50%; 
